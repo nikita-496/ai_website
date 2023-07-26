@@ -1,0 +1,32 @@
+.swiper {
+  position: static;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-next img,
+.swiper-button-prev img {
+  &:hover {
+    // box-shadow: -1px 0px 10px #f2633f;
+  }
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+// .swiper-reviews {
+//   .swiper-button-next,
+//   .swiper-button-prev {
+//     @media (max-width: 767px) {
+//       top: 80px;
+//     }
+//   }
+// }

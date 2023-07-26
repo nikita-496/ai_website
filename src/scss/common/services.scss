@@ -1,0 +1,115 @@
+.services {
+  margin-bottom: 150px;
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+  }
+}
+
+.services__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.services__item {
+  position: relative;
+  border: 1px solid #2d293d;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  &.item1 {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 334px;
+      height: 275px;
+      background-image: url("../img/serv/serv-blur1.png");
+      background-size: cover;
+      top: -100px;
+      left: -100px;
+    }
+  }
+  &.item2 {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 334px;
+      height: 238px;
+      background-image: url("../img/serv/serv-blur2.png");
+      background-size: cover;
+      top: -50px;
+      right: -50px;
+    }
+  }
+  &.item3 {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 255px;
+      height: 246px;
+      background-image: url("../img/serv/serv-blur3.png");
+      background-size: cover;
+      top: -100px;
+      right: -100px;
+    }
+  }
+  &.item4 {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 344px;
+      height: 200px;
+      background-image: url("../img/serv/serv-blur4.png");
+      background-size: cover;
+      top: -50px;
+      left: -70px;
+    }
+  }
+  &.item5 {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 279px;
+      height: 214px;
+      background-image: url("../img/serv/serv-blur5.png");
+      background-size: cover;
+      top: -50px;
+      right: 0px;
+    }
+  }
+  &.item6 {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 334px;
+      height: 174px;
+      background-image: url("../img/serv/serv-blur6.png");
+      background-size: cover;
+      top: 0;
+      right: -30px;
+    }
+  }
+}
+
+.services__title {
+  color: var(--color-orange);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.services__subtitle {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}

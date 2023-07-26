@@ -1,0 +1,44 @@
+section.start-block._container 
+  .start-block__head
+    h2.start-block__title We create your Web3 & <br> Fintech software products
+    div.start-block__subtitle Exactly the way you need them
+  .start-block__footer
+    button.btn-default.btn.btn-lg.btn-primary.js-modal(type='button' data-modal='#modal_1') <span>+</span> FREE CONSULTATION
+    a(href="#about-block").btn-arrow
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 9L12 22M12 22L15 19M12 22L9 19M12 6C11.4696 6 10.9609 5.78929 10.5858 5.41421C10.2107 5.03914 10 4.53043 10 4C10 3.46957 10.2107 2.96086 10.5858 2.58579C10.9609 2.21071 11.4696 2 12 2C12.5304 2 13.0391 2.21071 13.4142 2.58579C13.7893 2.96086 14 3.46957 14 4C14 4.53043 13.7893 5.03914 13.4142 5.41421C13.0391 5.78929 12.5304 6 12 6Z" stroke="#F2633F" stroke-width="1.17434" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      span About US
+    p Give valuable advice, point out the pitfalls, <br> and reduce uncertainty
+
+#modal_1.modal-window
+  .modal-window__title
+    h3.modal-title Get a free consultation
+    span.modal-subtitle Submit a form and our manager will contact you within 12 minutes
+    form.form-modal
+      #contact-row-modal
+        .custom-select.form__social
+          select#form-selectbox-modal
+            option Telegram
+            option Telegram
+            option Whatsapp
+        #contact-wrapper-modal
+          input.validated(type="tel" placeholder="Contact" required style="display: none;")#form-contact-modal
+          #phone-row-modal(style="display: flex;")
+            #countrycode-modal(data-active="false")
+              span#country-value-modal(data-value="RU")
+                span#flag-modal 🇷🇺
+                span#dialcode-modal  +7
+              #countrycode-selector-modal(style="display: none")
+                input#searchcode-modal
+                #countries-list-modal
+            input#phone-modal.validated(type="tel" placeholder="Contact" required)
+      .form__footer-modal.form__footer 
+              button.btn-default__disable.btn-default__form.btn-default(type="submit" disabled)#submit-modal SEND
+      .form__message#form-successmsg-modal 
+    a.modal-close(href='#')
+#modal-backdrop.modal-window__backdrop.hidden
+#modal_2.modal-window
+  .modal-window__title
+   h3.modal-title-success.modal-title Success
+   span.modal-subtitle-success Thanks for submitting the data
+  button#btn-success.btn-modal-success.btn-default OK
+#modal-backdrop.modal-window__backdrop.hidden

@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="utf-8">
+  <title>MYCELIUM LAB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta property="og:title" content="Mycelium Lab">
+  <meta property="og:description" content="Development and implementation of custom blockchain software for businesses and startups. Create a blockchain project with the most up-to-date blockchain technologies.">
+  <meta property="og:image" content="https://i.ibb.co/19qKcMM/preview.png">
+  <meta property="og:url" content="mycelium.team">
+  <meta property="og:image:width" content="968">
+  <meta property="og:image:height" content="504">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://i.ibb.co/19qKcMM/preview.png">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/site.webmanifest">
+  <body>
+    <div id="fullpage" onclick="this.style.display='none';"></div>
+    <script src="js/metrics.js"></script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/93728794" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+    <div class="wrapper">
+      <header class="header _container"> <a class="header__logo" href="index-ru.html"> <img src="img/logo.svg" alt="logo"></a><a class="header__logo-menu" href="#"><img src="img/logo-mobile.svg" alt="logo"></a>
+        <div class="header__nav nav"> 
+          <div class="nav__links"><a href="index-ru.html">Главная</a><a href="#about-block">Услуги</a><a href="#advantages-block">Команда</a><a href="#cases-block">Кейсы</a><a href="#partners-block">Партнеры</a><a href="carrer-ru.html">Карьера</a></div>
+          <div class="header__social social"> <a href="mailto:head@mycelium.team" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22.6375 26.0001C20.4101 27.479 17.7527 28.1716 15.0868 27.9681C12.421 27.7647 9.89942 26.6768 7.92226 24.877C5.9451 23.0773 4.6256 20.6688 4.17312 18.0338C3.72064 15.3988 4.1611 12.6881 5.42462 10.3319C6.68813 7.97567 8.70233 6.1089 11.1476 5.02778C13.5929 3.94666 16.3292 3.71311 18.9223 4.36419C21.5154 5.01527 23.8168 6.51369 25.4614 8.62169C27.1059 10.7297 27.9994 13.3265 28 16.0001C28 18.7626 27 21.0001 24.5 21.0001C22 21.0001 21 18.7626 21 16.0001V11.0001" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="http://t.me/perminovma" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 16.8625L22.2375 26.75C22.3674 26.865 22.5249 26.9442 22.6947 26.9799C22.8644 27.0156 23.0405 27.0065 23.2057 26.9535C23.3708 26.9006 23.5194 26.8056 23.6367 26.6779C23.7541 26.5501 23.8362 26.3941 23.875 26.225L28.575 5.70004C28.6144 5.52327 28.6051 5.33913 28.548 5.16726C28.4909 4.99538 28.3883 4.84224 28.2509 4.72417C28.1136 4.6061 27.9468 4.52753 27.7683 4.49687C27.5898 4.4662 27.4064 4.48457 27.2375 4.55004L4.16251 13.6125C3.23751 13.975 3.36251 15.325 4.33751 15.525L11 16.8625Z" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 16.8627L28.0125 4.5752" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.6125 21.7998L12.7125 25.6998C12.5734 25.8411 12.3954 25.9378 12.2011 25.9777C12.0069 26.0176 11.8052 25.9988 11.6216 25.9238C11.4381 25.8488 11.281 25.7209 11.1703 25.5563C11.0596 25.3918 11.0003 25.1981 11 24.9998L11 16.8623" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://wa.me/79992027737" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.675 22.1251C4.18611 19.6131 3.66531 16.644 4.21039 13.7753C4.75546 10.9065 6.32891 8.33537 8.63535 6.5445C10.9418 4.75364 13.8226 3.86623 16.737 4.04888C19.6513 4.23152 22.3988 5.47165 24.4636 7.53646C26.5284 9.60127 27.7686 12.3488 27.9512 15.2631C28.1339 18.1775 27.2465 21.0583 25.4556 23.3647C23.6647 25.6712 21.0936 27.2446 18.2248 27.7897C15.3561 28.3348 12.387 27.814 9.875 26.3251V26.3251L5.725 27.5001C5.55497 27.5498 5.3747 27.5529 5.20307 27.509C5.03145 27.4651 4.87479 27.3758 4.74953 27.2506C4.62426 27.1253 4.535 26.9686 4.4911 26.797C4.4472 26.6254 4.45027 26.4451 4.5 26.2751L5.675 22.1251Z" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.0125 23C17.6967 23.0033 16.3932 22.7466 15.177 22.2446C13.9607 21.7426 12.8556 21.0052 11.9252 20.0748C10.9948 19.1444 10.2574 18.0393 9.75544 16.823C9.25343 15.6068 8.9967 14.3033 9 12.9875C9.00331 12.0614 9.37352 11.1744 10.0295 10.5207C10.6856 9.86705 11.5739 9.50002 12.5 9.50003V9.50003C12.6528 9.49881 12.8031 9.5388 12.9351 9.61579C13.0671 9.69278 13.1759 9.80392 13.25 9.93753L14.7125 12.4875C14.7995 12.6425 14.8441 12.8177 14.8419 12.9955C14.8397 13.1732 14.7908 13.3472 14.7 13.5L13.525 15.4625C14.1268 16.8014 15.1986 17.8732 16.5375 18.475L18.5 17.3C18.6528 17.2093 18.8268 17.1603 19.0046 17.1581C19.1823 17.1559 19.3575 17.2006 19.5125 17.2875L22.0625 18.75C22.1961 18.8242 22.3072 18.933 22.3842 19.0649C22.4612 19.1969 22.5012 19.3472 22.5 19.5C22.4967 20.4251 22.1286 21.3116 21.4757 21.9669C20.8227 22.6222 19.9376 22.9934 19.0125 23V23Z" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://go.oncehub.com/ceocbdo" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26 5L6 5C5.44772 5 5 5.44772 5 6L5 26C5 26.5523 5.44772 27 6 27L26 27C26.5523 27 27 26.5523 27 26L27 6C27 5.44772 26.5523 5 26 5Z" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 3L22 7" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 3L10 7" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 11L27 11" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.5 16L14.6625 21.5L11.5 18.5" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        </div>
+        <div class="header__burger burger"><span> </span><span> </span><span></span></div>
+      </header>
+      <div class="page">
+        <section class="start-block _container"> 
+          <div class="start-block__head">
+            <h2 class="start-block__title">Мы создаем ваши Web3, Fintech и AI проекты</h2>
+            <div class="start-block__subtitle">Именно такими, какими они нужны вам</div>
+          </div>
+          <div class="start-block__footer"><a class="btn-default" href="#consultation-block"><span>+</span> БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</a><a class="btn-arrow" href="#about-block"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 9L12 22M12 22L15 19M12 22L9 19M12 6C11.4696 6 10.9609 5.78929 10.5858 5.41421C10.2107 5.03914 10 4.53043 10 4C10 3.46957 10.2107 2.96086 10.5858 2.58579C10.9609 2.21071 11.4696 2 12 2C12.5304 2 13.0391 2.21071 13.4142 2.58579C13.7893 2.96086 14 3.46957 14 4C14 4.53043 13.7893 5.03914 13.4142 5.41421C13.0391 5.78929 12.5304 6 12 6Z" stroke="#F2633F" stroke-width="1.17434" stroke-linecap="round" stroke-linejoin="round"/></svg><span>О нас</span></a>
+            <p>Даем ценные советы, выявляем потенциальные проблемы<br> и помогаем уменьшить степень неопределенности.</p>
+          </div>
+        </section>
+        <section class="services _container" id="about-block">
+          <div class="_container-inner">
+            <div class="section-head">
+              <h2>ОЗНАКОМЬТЕСЬ С НАШИМИ УСЛУГАМИ</h2>
+              <h3>Превратите идею в прибыль</h3>
+            </div>
+            <div class="services__wrapper"> 
+              <div class="services__item item1">
+                <div class="services__title">WEB3/ DEFI/ FINTECH</div>
+                <div class="services__subtitle">Проект в Web3, DeFi и Fintech сферах под ключ</div>
+                <p>Для воплощения ваших идей в жизнь нет необходимости нанимать целую команду профессионалов и набивать шишки - мы уже сделали это за вас. Получите сервис эталонного качества созданный с нуля!</p>
+              </div>
+              <div class="services__item item2">
+                <div class="services__title">AI DEVELOPMENT</div>
+                <div class="services__subtitle">Магия AI на службе вашего проекта</div>
+                <p>Мы используем искусственный интеллект для интеграции лингвистических моделей по типу ChatGPT и генерации изображений по типу Midjourney, обогащая проекты клиентов невероятными возможностями.</p>
+              </div>
+              <div class="services__item item3">
+                <div class="services__title">КОНСУЛЬТАЦИИ</div>
+                <div class="services__subtitle">Услуги консультации</div>
+                <p>Мы являемся пионерами в разработке Fintech, Web3 и AI проектов и уже являлись экспертами в этих областях раньше, чем большинство наших конкурентов только начинали свой путь.<br><br>Защитите себя от потенциальных рисков и проконсультируйтесь с нашими экспертами.</p>
+              </div>
+              <div class="services__item item4">
+                <div class="services__title">РАЗРАБОТКА</div>
+                <div class="services__subtitle">Разработка мобильных и веб-приложений</div>
+                <p>Независимо от того, какой сервис вам нужен: iOS, Android или веб-приложение, мы тесно сотрудничаем с каждым клиентом для того, чтобы создать продукт, который полностью отвечает потребностям ваших пользователей и приносит пользу вашему бизнесу.</p>
+              </div>
+              <div class="services__item item5">
+                <div class="services__title">SECURITY AUDIT/</div>
+                <div class="services__subtitle">Аудит безопасности смарт-контрактов и децентрализованных приложений (dApp)</div>
+                <p>Устраните риски взломов, эксплойтов и других атак на ваши сервера, децентрализованные приложения и смарт-контракты с помощью передовых методик и специалистов по компьютерной безопасности высшего уровня.</p>
+              </div>
+              <div class="services__item item6">
+                <div class="services__title">АУТСОРСИНГ</div>
+                <div class="services__subtitle">Услуги по аутсорсингу разработки и аутстаффинга</div>
+                <p>Поддержка собственного штата IT-специалистов обходится дороже, чем найм команды профессиональных, сработавшихся разработчиков. Мы можем предоставить вам отдельных специалистов или целую команду, включающую фронтенд и бэкенд разработчиков, дизайнеров, тестировщиков, менеджеров проектов и других специалистов.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="marquee">/DEFI APPLICATIONS  /STACKING PLATFORMS  /CRYPTO GAME  /DAO – DECENTRALIZED AUTONOMOUS ORGANIZATION  /CRYPTOCURRENCIES FROM SCRATCH  /DEFI APPLICATIONS  /STACKING PLATFORMS  /CRYPTO GAME    </div>
+        <section class="description">
+          <div class="_container"> 
+            <div class="section-head"> 
+              <h2><span>/ МЫ ГОРДИМСЯ ТЕМ, /</span> ЧТО ПРЕУСПЕВАЕМ В КАЖДОМ ПРОЕКТЕ <br> НАД КОТОРЫМ МЫ РАБОТАЕМ</h2>
+            </div>
+            <div class="description__wrapper _container-inner">
+              <div class="description__text">
+                <p>Мы придерживаемся профессионального подхода во взаимодействии с нашими клиентами на всех этапах - от планирования до внедрения и обслуживания. Наша команда вкладывает много времени и энергии, чтобы достичь желаемого результата, исходя из бизнес-требований клиента.</p>
+                <p>Свяжитесь с нами, чтобы мгновенно получить высококачественные услуги по разработке DeFi.</p>
+              </div><a class="btn-default" href="#consultation-block">
+                  <span>+</span> Давайте обсудим ваш проект</a>
+            </div>
+          </div>
+        </section>
+        <section class="experience _container"> 
+          <div class="section-head"> 
+            <h2>Опыт работы с <i>2019</i> года</h2>
+            <h3>Сегодня Mycelium Lab - это:</h3>
+          </div>
+          <div class="experience__wrapper"> 
+            <div class="experience__item" data-number="70+">
+              <h3>ПРОЕКТОВ</h3>
+              <p>Созданы под ключ</p>
+            </div>
+            <div class="experience__item" data-number="4+">
+              <h3>ГОДА</h3>
+              <p>Опыта разработки</p>
+            </div>
+            <div class="experience__item" data-number="39+">
+              <h3>СПЕЦИАЛИСТОВ</h3>
+              <p>Более 33 разработчиков</p>
+            </div>
+            <div class="experience__item" data-number="40+">
+              <h3>ПАРТНЕРОВ</h3>
+              <p>Нас знают и доверяют</p>
+            </div>
+          </div>
+          <div class="experience__quote"> 
+            <p>Команда наших специалистов обладает совокупным опытом, <span>более чем в 70 проектах.</span> Мы успешно разрабатываем различные решения в AI и Fintech индустрии (проекты с использованием лингвистических и генеративных моделей), а также в блокчейне, включая смарт-контракты, безопасные системы хранения и передачи данных, криптовалютные биржи, P2P-сервисы, кошельки, NFT маркетплейсы, GameFi, DEX, пулы ликвидности и другие проекты находящиеся на передовой.</p>
+          </div>
+        </section>
+        <section class="advantages _container" id="advantages-block">
+          <div class="section-head advantages__title">
+            <h2>/ ПОЧЕМУ МЫ? /</h2>
+          </div>
+          <div class="advantages__grid grid">
+            <div class="advantages__item grid__item item1">
+              <div class="advantages__item-title">Никаких рисков и переплат</div>
+              <p>Мы согласуем стоимость и условия перед началом работы, подпишем договор и дадим гарантию.</p>
+            </div>
+            <div class="advantages__item grid__item item2">
+              <div class="advantages__item-title">Поэтапная оплата по результатам</div>
+              <p>Оплачивайте по частям - это удобно и безопасно.</p>
+            </div>
+            <div class="advantages__item grid__item item3">
+              <div class="advantages__item-title">Быстрый запуск MVP</div>
+              <p>Мы разработаем концепцию, проведем R&D, составим детальный план и оперативно воплотим его в жизнь. Обычно процесс занимает от 14 до 60 дней.</p>
+            </div>
+            <div class="advantages__item grid__item item4">
+              <div class="advantages__item-title">Три модели оплаты на Ваш выбор</div>
+              <p>Мы предлагаем гибкую систему оплаты, которая включает в себя почасовую оплату (T&M), фиксированную цену за весь проект или возможность оплаты отдельных специалистов. Мы готовы обсудить с вами наилучший вариант, который лучше всего подходит вам.</p>
+            </div>
+            <div class="advantages__item grid__item item5">
+              <div class="advantages__item-title">Максимальная персонализация</div>
+              <p>Мы уделим особое внимание вашим задачам и предложим наиболее подходящее решение, которое соответствует вашим бизнес-целям.</p>
+            </div>
+            <div class="advantages__item grid__item item6">
+              <div class="advantages__item-title">Индивидуальные решения</div>
+              <p>Мы создадим для вас индивидуальный дизайн пользовательского интерфейса (UX/UI) и напишем чистый и уникальный код.</p>
+            </div>
+          </div>
+          <div class="advantages__footer">
+            <div class="advantages__item grid__item item5">
+              <div class="advantages__item-title">Максимальная персонализация</div>
+              <p>Мы уделим особое внимание вашим задачам и предложим наиболее подходящее решение, которое соответствует вашим бизнес-целям.</p>
+            </div>
+            <div class="advantages__item grid__item item6">
+              <div class="advantages__item-title">Индивидуальные решения</div>
+              <p>Мы создадим для вас индивидуальный дизайн пользовательского интерфейса (UX/UI) и напишем чистый и уникальный код.</p>
+            </div>
+          </div><a class="btn-default advantages__btn" href="#consultation-block">
+              <span>+</span> Связаться с нами</a>
+        </section>
+        <section class="steps">
+          <div class="_container"> 
+            <div class="section-head"> 
+              <h2>КАК ЭТО РАБОТАЕТ</h2>
+              <h3>Мы Ваш надежный партнер, который возьмет на себя техническую часть вашего проекта,<br> освободив вас от этой задачи и позволив вам сконцентрироваться на развитии своего бизнеса.</h3>
+            </div>
+            <div class="steps__wrapper"> 
+              <div class="steps__item"><img src="img/LightbulbFilament.svg" alt="">
+                <h3>Вы приходите к нам</h3>
+                <p>С идеей или<br> незавершенным проектом</p>
+              </div>
+              <div class="steps__item"><img src="img/Coffee.svg" alt="">
+                <h3>Расслабляетесь</h3>
+                <p>И следите за ходом<br> разработки вашего проекта</p>
+              </div>
+              <div class="steps__item"><img src="img/Frame.svg" alt="" width="55" heght="50">
+                <h3>Получаете</h3>
+                <p>Функциональный, оригинальный, надежный<br> и привлекательный продукт, готовый к запуску</p>
+              </div>
+            </div>
+            <div class="steps__footer"> <img src="img/Download.svg" alt="download-icon">
+              <div>Хотите узнать больше? <br> Скачать нашу <a href="">презентацию</a></div>
+            </div>
+          </div>
+        </section>
+        <section class="cases" id="cases-block">
+          <div class="_container">
+            <div class="section-head cases__title">
+              <h2>/ Информациях о проектах /</h2>
+            </div>
+            <div class="cases__wrapper"> 
+              <div class="cases__item">
+                <div class="cases__picture cases__grid-item1">
+                  <div class="cases__picture-single show-uno"><img src="img/cases/image1.jpg" alt="" loading="lazy"></div>
+                  <div class="cases__picture-single show-uno"><img src="img/cases/image2.jpg" alt="" loading="lazy"></div>
+                  <div class="cases__picture-single show-uno"><img src="img/cases/image3.jpg" alt="" loading="lazy"></div>
+                  <div class="cases__picture-single show-uno"><img src="img/cases/image4.jpg" alt="" loading="lazy"></div>
+                </div>
+                <div class="cases__item-col">
+                  <div class="cases__number cases__grid-item2"><span><i>1</i></span></div>
+                  <div class="cases__subtitle cases__grid-item3 show-uno">UNO farm <a>/uno.farm</a></div>
+                  <div class="cases__text cases__grid-item4 show-uno">
+                    <p>Проект помогает крипто-инвесторам максимизировать свою прибыль и минимизировать риски путем автоматического распределения средств своего портфеля между лучшими продуктами DeFi с помощью единого инструмента. Интеллектуальный механизм агрегации обеспечивает безопасность и высокую доходность, предоставляя инвесторам простой доступ к лучшим процентным ставкам со всего рынка DeFi на их активы.</p>
+                  </div>
+                </div>
+                <div class="cases__text cases__text--mobile cases__grid-item4 show-uno">
+                  <p>Проект помогает крипто-инвесторам максимизировать свою прибыль и минимизировать риски путем автоматического распределения средств своего портфеля между лучшими продуктами DeFi с помощью единого инструмента. Интеллектуальный механизм агрегации обеспечивает безопасность и высокую доходность, предоставляя инвесторам простой доступ к лучшим процентным ставкам со всего рынка DeFi на их активы.</p>
+                </div>
+              </div>
+              <div class="cases__item">
+                <div class="cases__picture cases__grid-item1 cases__picture--one">
+                  <div class="cases__picture-single show-bdns"><img src="img/cases/image5.png" alt="" loading="lazy"></div>
+                </div>
+                <div class="cases__item-col">
+                  <div class="cases__number cases__grid-item2"> <span><i>2</i></span></div>
+                  <div class="cases__subtitle cases__grid-item3 show-bdns">BDNS <a>/BDNS.app</a></div>
+                  <div class="cases__text cases__grid-item4 show-bdns">
+                    <p>BDNS - это первая в мире служба доменных имен, полностью основанная на Ethereum. Домены можно создавать в форме невзаимозаменяемых токенов (NFT), которые можно привязать к адресу кошелька Ethereum по имени. Таким образом, вы можете использовать простое имя вместо длинного адреса, например, ваш адрес кошелька Ethereum "Blockchain.eth" может быть представлен просто как "Blockchain" с помощью покупки и настройки NFT BDNS. Это предоставляет удобство и уникальность в использовании доменных имен на базе Ethereum.</p>
+                  </div>
+                </div>
+                <div class="cases__text cases__text--mobile cases__grid-item4 show-bdns">
+                  <p>BDNS - это первая в мире служба доменных имен, полностью основанная на Ethereum. Домены можно создавать в форме невзаимозаменяемых токенов (NFT), которые можно привязать к адресу кошелька Ethereum по имени. Таким образом, вы можете использовать простое имя вместо длинного адреса, например, ваш адрес кошелька Ethereum "Blockchain.eth" может быть представлен просто как "Blockchain" с помощью покупки и настройки NFT BDNS. Это предоставляет удобство и уникальность в использовании доменных имен на базе Ethereum.</p>
+                </div>
+              </div>
+              <div class="cases__item">
+                <div class="cases__picture cases__grid-item1 cases__picture--two">
+                  <div class="cases__picture-wrapper">
+                    <div class="cases__picture-single show-dwill"><img src="img/cases/image8.png" alt="" loading="lazy"></div>
+                    <div class="cases__picture-single show-dwill"><img src="img/cases/image6.jpg" alt="" loading="lazy"></div>
+                  </div>
+                </div>
+                <div class="cases__item-col">
+                  <div class="cases__number cases__grid-item2"> <span><i>3</i></span></div>
+                  <div class="cases__subtitle cases__grid-item3 show-dwill">dWill <a>/dWill.app</a></div>
+                  <div class="cases__text cases__grid-item4 show-dwill"> 
+                    <p>dWill - это инновационный протокол наследования, основанный на принципах децентрализации и безопасности хранения. С помощью dWill вы можете безопасно передавать токены из вашего криптовалютного кошелька на доверенные кошельки вашей семьи и друзей, или на ваш резервный кошелек. Этот процесс осуществляется автономно и полностью децентрализованно, обеспечивая надежность и безопасность ваших финансов.</p>
+                  </div>
+                </div>
+                <div class="cases__text cases__text--mobile cases__grid-item4 show-dwill"> 
+                  <p>dWill - это инновационный протокол наследования, основанный на принципах децентрализации и безопасности хранения. С помощью dWill вы можете безопасно передавать токены из вашего криптовалютного кошелька на доверенные кошельки вашей семьи и друзей, или на ваш резервный кошелек. Этот процесс осуществляется автономно и полностью децентрализованно, обеспечивая надежность и безопасность ваших финансов.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cases__btns"> <a class="btn-default" href="#consultation-block"><span>+</span> ЗАПИШИТЕСЬ НА КОНСУЛЬТАЦИЮ</a>
+              <div class="btn-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 9L12 22M12 22L15 19M12 22L9 19M12 6C11.4696 6 10.9609 5.78929 10.5858 5.41421C10.2107 5.03914 10 4.53043 10 4C10 3.46957 10.2107 2.96086 10.5858 2.58579C10.9609 2.21071 11.4696 2 12 2C12.5304 2 13.0391 2.21071 13.4142 2.58579C13.7893 2.96086 14 3.46957 14 4C14 4.53043 13.7893 5.03914 13.4142 5.41421C13.0391 5.78929 12.5304 6 12 6Z" stroke="#F2633F" stroke-width="1.17434" stroke-linecap="round" stroke-linejoin="round"/></svg><span>ПОСМОТРЕТЬ ДРУГИЕ ПРОЕКТЫ</span></div>
+            </div>
+            <div class="cases__carousel">
+              <div class="swiper swiper-cases">
+                <div class="swiper-wrapper"> 
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/uno.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/uno.webp" alt=""><img class="active" src="img/cases/active/uno.png"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/slide2.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/amnext.webp" alt=""><img class="active" src="img/cases/active/amnext.png"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/slide3.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/voomo.webp" alt=""><img class="active" src="img/cases/active/voomo.png"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/slide4.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/xstarter.webp" alt=""><img class="active" src="img/cases/active/xstarter.png"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/slide5.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/social.webp" alt=""><img class="active" src="img/cases/active/social.png"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/slide6.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/swap.webp" alt="" style="transform: scale(1.1)"><img class="active" src="img/cases/active/swap.png" style="transform: scale(1.1)"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/slide7.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/spicy.webp" alt="" style="transform: scale(1.1)"><img class="active" src="img/cases/active/spicy.png" style="transform: scale(1.1)"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/slide8.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/diamond.webp" alt=""><img class="active" src="img/cases/active/diamond.png"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/mandala.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/mandala.webp" alt="" style="transform: scale(1.15)"><img class="active" src="img/cases/active/mandala.png" style="transform: scale(1.15)"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/fair.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/fair.webp" alt=""><img class="active" src="img/cases/active/fair.png"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/phyera.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/phyera.webp" alt="" style="transform: scale(0.85)"><img class="active" src="img/cases/active/phyera.png" style="transform: scale(0.85)"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/bdns.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/bdns.webp" alt="" style="transform: scale(0.7)"><img class="active" src="img/cases/active/bdns.png" style="transform: scale(0.7)"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/darwin.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/darwin.webp" alt=""><img class="active" src="img/cases/active/darwin.png"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/1stop.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/1stop.webp" alt=""><img class="active" src="img/cases/active/1stop.png"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/ccrisp.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/ccrisp.webp" alt="" style="transform: scale(0.9)"><img class="active" src="img/cases/active/ccrisp.png" style="transform: scale(0.9)"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/grey.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/grey.webp" alt="" style="transform: scale(0.8)"><img class="active" src="img/cases/active/grey.webp" style="transform: scale(0.8)"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/heycard.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/heycard.webp" alt=""><img class="active" src="img/cases/active/heycard.webp"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide cases-slide">
+                    <div class="cases-slide__item"> 
+                      <div class="cases-slide__back"> <img src="img/carousel/c5v.png" alt=""></div>
+                      <div class="cases-slide__name"> <img class="unactive" src="img/cases/unactive/c5v.png" alt="" style="transform: scale(1.3)"><img class="active" src="img/cases/active/c5v.png" style="transform: scale(1.3)"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="cases__footer"><a class="btn-default" href="#consultation-block"><span>+</span> ЗАПИШИТЕСЬ НА КОНСУЛЬТАЦИЮ</a></div>
+        </section>
+        <section class="reviews">
+          <div class="_container">
+            <div class="section-head"> 
+              <h2>ВОТ ЧТО ГОВОРЯТ НАШИ КЛИЕНТЫ</h2>
+              <h3>Бесплатно и конфиденциально</h3>
+            </div>
+            <div class="reviews__wrapper"> 
+              <div class="swiper swiper-reviews"> 
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> 
+                    <div class="reviews-slide"> 
+                      <div class="reviews-slide__pic"> <img src="img/swapcase-rep.png" alt="" style="max-width: 120px;"></div>
+                      <div class="reviews-slide__descr"> 
+                        <div class="reviews-slide__name">Ivan Kononov <span>Генеральный директор <a id="showSwapcaseCase">swapcase.io</a><span></div>
+                        <p>SWAPCASE - это децентрализованный фонд управления активами.</p>
+                      </div>
+                      <div class="reviews-slide__text"> 
+                        <p>"Когда ребята приступили к проекту, мы даже не представляли до конца концепцию того, что мы хотим увидеть в конечном итоге. Нам повезло с выбором технической команды, они на 100% поняли нашу задачу и сделали проект полностью своими силами. Но больше всего меня удивил профессионализм и терпение менеджеров, которые работали над проектом, как будто это было их собственное детище."</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"> 
+                    <div class="reviews-slide"> 
+                      <div class="reviews-slide__pic"> <img src="img/amnext-rep.png" alt="" style="max-width: 120px;"></div>
+                      <div class="reviews-slide__descr"> 
+                        <div class="reviews-slide__name">Fabio Pizzingrili <span>Генеральный директор <a id="showAmnextCase">Amnext</a></span></div>
+                        <p>Следующая крупная лотерея в сфере DeFi</p>
+                      </div>
+                      <div class="reviews-slide__text"> 
+                        <p>"Хорошая работа, без нареканий! Я рад, что обратился именно к этим ребятам!"</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"> 
+                    <div class="reviews-slide"> 
+                      <div class="reviews-slide__pic"> <img src="img/spicy-rep.png" alt="" style="max-width: 120px;"></div>
+                      <div class="reviews-slide__descr"> 
+                        <div class="reviews-slide__name">Paolo Diglio <span>Генеральный директор <a id="showSpicyNetworkCase">Spicy.Network</a></span></div>
+                        <p>Решение все-в-одном, которое предоставляет все необходимые услуги<br> для компаний, желающих запустить свои проекты,<br> а также для инвесторов, которым нужно все в одной платформе.</p>
+                      </div>
+                      <div class="reviews-slide__text"> 
+                        <p>"Большое спасибо за хорошо выполненную работу! Мы очень довольны результатом и счастливы, что начали с вами сотрудничество. Вы - очень хорошие профессионалы и специалисты с выдающимися качествами и творческим подходом!"</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"> 
+                    <div class="reviews-slide"> 
+                      <div class="reviews-slide__pic"> <img src="img/acta-rep.png" alt="" style="max-width: 120px;"></div>
+                      <div class="reviews-slide__descr"> 
+                        <div class="reviews-slide__name">Christof Waton <span>Генеральный директор <a>Acta Finance</a></span></div>
+                        <p>Экосистема DeFi и агрегатор ликвидности межцепочечных сетей<br> с активными пулами ликвидности.</p>
+                      </div>
+                      <div class="reviews-slide__text"> 
+                        <p>"Отличная работа, ребята! Ваша открытость, честность и гибкость в отношении изменяющихся условий DeFi помогли избежать многих проблем, а ваш превентивный подход впечатляет!"</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="consultation" id="consultation-block">
+          <div class="section-head"> 
+            <h2>ОЦЕНИТЕ СВОЙ ПРОЕКТ СЕЙЧАС!</h2>
+            <h3>Получите бесплатную и конфиденциальную консультацию,<br>доверьте ваш проект нашей команде!</h3>
+          </div>
+          <div class="consultation__wrapper">
+            <div class="consultation__row">
+              <div class="contact-us-row"><span>Свяжитесь с нами через мессенджер</span><svg class="contact-us-arrow" width="22" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 4h13m0 0l-3-3m3 3l-3 3M5 4a2 2 0 11-4 0 2 2 0 014 0z" stroke="#fff" stroke-width="1.174" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div class="social"> <a href="mailto:head@mycelium.team" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22.6375 26.0001C20.4101 27.479 17.7527 28.1716 15.0868 27.9681C12.421 27.7647 9.89942 26.6768 7.92226 24.877C5.9451 23.0773 4.6256 20.6688 4.17312 18.0338C3.72064 15.3988 4.1611 12.6881 5.42462 10.3319C6.68813 7.97567 8.70233 6.1089 11.1476 5.02778C13.5929 3.94666 16.3292 3.71311 18.9223 4.36419C21.5154 5.01527 23.8168 6.51369 25.4614 8.62169C27.1059 10.7297 27.9994 13.3265 28 16.0001C28 18.7626 27 21.0001 24.5 21.0001C22 21.0001 21 18.7626 21 16.0001V11.0001" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="http://t.me/perminovma" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 16.8625L22.2375 26.75C22.3674 26.865 22.5249 26.9442 22.6947 26.9799C22.8644 27.0156 23.0405 27.0065 23.2057 26.9535C23.3708 26.9006 23.5194 26.8056 23.6367 26.6779C23.7541 26.5501 23.8362 26.3941 23.875 26.225L28.575 5.70004C28.6144 5.52327 28.6051 5.33913 28.548 5.16726C28.4909 4.99538 28.3883 4.84224 28.2509 4.72417C28.1136 4.6061 27.9468 4.52753 27.7683 4.49687C27.5898 4.4662 27.4064 4.48457 27.2375 4.55004L4.16251 13.6125C3.23751 13.975 3.36251 15.325 4.33751 15.525L11 16.8625Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 16.8627L28.0125 4.5752" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.6125 21.7998L12.7125 25.6998C12.5734 25.8411 12.3954 25.9378 12.2011 25.9777C12.0069 26.0176 11.8052 25.9988 11.6216 25.9238C11.4381 25.8488 11.281 25.7209 11.1703 25.5563C11.0596 25.3918 11.0003 25.1981 11 24.9998L11 16.8623" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://wa.me/79992027737" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.675 22.1251C4.18611 19.6131 3.66531 16.644 4.21039 13.7753C4.75546 10.9065 6.32891 8.33537 8.63535 6.5445C10.9418 4.75364 13.8226 3.86623 16.737 4.04888C19.6513 4.23152 22.3988 5.47165 24.4636 7.53646C26.5284 9.60127 27.7686 12.3488 27.9512 15.2631C28.1339 18.1775 27.2465 21.0583 25.4556 23.3647C23.6647 25.6712 21.0936 27.2446 18.2248 27.7897C15.3561 28.3348 12.387 27.814 9.875 26.3251V26.3251L5.725 27.5001C5.55497 27.5498 5.3747 27.5529 5.20307 27.509C5.03145 27.4651 4.87479 27.3758 4.74953 27.2506C4.62426 27.1253 4.535 26.9686 4.4911 26.797C4.4472 26.6254 4.45027 26.4451 4.5 26.2751L5.675 22.1251Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.0125 23C17.6967 23.0033 16.3932 22.7466 15.177 22.2446C13.9607 21.7426 12.8556 21.0052 11.9252 20.0748C10.9948 19.1444 10.2574 18.0393 9.75544 16.823C9.25343 15.6068 8.9967 14.3033 9 12.9875C9.00331 12.0614 9.37352 11.1744 10.0295 10.5207C10.6856 9.86705 11.5739 9.50002 12.5 9.50003V9.50003C12.6528 9.49881 12.8031 9.5388 12.9351 9.61579C13.0671 9.69278 13.1759 9.80392 13.25 9.93753L14.7125 12.4875C14.7995 12.6425 14.8441 12.8177 14.8419 12.9955C14.8397 13.1732 14.7908 13.3472 14.7 13.5L13.525 15.4625C14.1268 16.8014 15.1986 17.8732 16.5375 18.475L18.5 17.3C18.6528 17.2093 18.8268 17.1603 19.0046 17.1581C19.1823 17.1559 19.3575 17.2006 19.5125 17.2875L22.0625 18.75C22.1961 18.8242 22.3072 18.933 22.3842 19.0649C22.4612 19.1969 22.5012 19.3472 22.5 19.5C22.4967 20.4251 22.1286 21.3116 21.4757 21.9669C20.8227 22.6222 19.9376 22.9934 19.0125 23V23Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+            </div>
+            <div class="consultation__row"><span>
+                Забронируйте удобное время для консультации<svg width="22" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 4h13m0 0l-3-3m3 3l-3 3M5 4a2 2 0 11-4 0 2 2 0 014 0z" stroke="#fff" stroke-width="1.174" stroke-linecap="round" stroke-linejoin="round"/></svg></span><a class="btn-default" href="https://go.oncehub.com/ceocbdo" target="_blank">Назначить <br>встречу</a></div>
+            <div class="consultation__row consultation__row--mode"><span>
+                Или просто заполните эту форму<svg width="22" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 4h13m0 0l-3-3m3 3l-3 3M5 4a2 2 0 11-4 0 2 2 0 014 0z" stroke="#fff" stroke-width="1.174" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          </div>
+          <form class="form">
+            <input class="validated" type="text" placeholder="Имя" required id="form-name">
+            <div id="contact-row">
+              <div class="custom-select form__social">
+                <select id="form-selectbox">
+                  <option>Email</option>
+                  <option>Email</option>
+                  <option>Telegram</option>
+                  <option>Whatsapp</option>
+                </select>
+              </div>
+              <div id="contact-wrapper">
+                <input class="validated" type="email" placeholder="Контакт" required id="form-contact">
+                <div id="phone-row" style="display: none;">
+                  <div id="countrycode" data-active="false"><span id="country-value" data-value="RU"><span id="flag">🇷🇺</span><span id="dialcode"> +7</span></span>
+                    <div id="countrycode-selector" style="display: none">
+                      <input id="searchcode">
+                      <div id="countries-list"></div>
+                    </div>
+                  </div>
+                  <input id="phone">
+                </div>
+              </div>
+            </div>
+            <textarea class="validated" placeholder="Кратко опишите свой проект или идею" required id="form-textarea"></textarea>
+            <div class="form__footer"> 
+              <button class="btn-default" data-translation="ru" type="submit" id="submit">Отправить запрос</button><span>Используя сервис, вы принимаете Условия предоставления услуг</span>
+            </div>
+            <div class="form__message" id="form-successmsg"> </div>
+          </form>
+        </section>
+        <section class="partners" id="partners-block"> 
+          <div class="section-head"> 
+            <h2>ПАРТНЕРЫ</h2>
+            <h3>Основано на опыте более чем в 70 проектах</h3>
+          </div>
+          <div class="partners__wrapper"> 
+            <div class="row"> <a class="col1 cointelegraph" target="_blank" href="https://cointelegraph.com/"><img class="partner-icon" src="img/partners/cointelegraph.svg"></a><a class="col2 chainlink" target="_blank" href="https://chain.link/"><img class="partner-icon" src="img/partners/chainlink.svg"></a><a class="col3 oneinch" target="_blank" href="https://1inch.io/"><img class="partner-icon" src="img/partners/1inch.svg"></a><a class="col4 metis" target="_blank" href="https://www.metis.io"><img class="partner-icon" src="img/partners/metis.svg"></a><a class="col5 thegraph" target="_blank" href="https://thegraph.com"><img class="partner-icon" src="img/partners/thegraph.svg"></a><a class="col6" target="_blank" href="https://near.org/"><img class="partner-icon" src="img/partners/near.svg"></a><a class="col7" target="_blank" href="https://de.fi"><img class="partner-icon" src="img/partners/defi.svg"></a></div>
+            <div class="row"> <a class="col1 magicsquare" target="_blank" href="https://magicsquare.io"><img class="partner-icon" src="img/partners/magicsquare.svg"></a><a class="col2 apeswap" target="_blank" href="https://apeswap.finance/"><img class="partner-icon" src="img/partners/apeswap.svg"></a><a class="col3" target="_blank" href="https://odos.xyz/"><img class="partner-icon" src="img/partners/odos.svg"></a><a class="col4" target="_blank" href="https://hacken.io"><img class="partner-icon" src="img/partners/hacken.svg"></a><a class="col5 algorand" target="_blank" href="https://algorand.com/"><img class="partner-icon" src="img/partners/algorand.svg"></a><a class="col6 boba" target="_blank" href="https://boba.network"><img class="partner-icon" src="img/partners/boba.svg"></a><a class="col7 cls" target="_blank" href="https://www.cls.global"><img class="partner-icon" src="img/partners/cls.svg"></a></div>
+            <div class="row"> <a class="col1" target="_blank" href="https://arbitrum.io"><img class="partner-icon" src="img/partners/arbitrum2.svg"></a><a class="col2" target="_blank" href="https://www.avax.network"><img class="partner-icon" src="img/partners/avalanche2.svg"></a><a class="col3 bitkeep" target="_blank" href="https://bitkeep.com/"><img class="partner-icon" src="img/partners/bitkeep2.svg"></a><a class="col4" target="_blank" href="https://www.certik.com/"><img class="partner-icon" src="img/partners/certik.svg"></a><a class="col5 aurora" target="_blank" href="https://aurora.dev"><img class="partner-icon" src="img/partners/aurora2.svg"></a><a class="col6 safelaunch" target="_blank" href="https://safelaunch.io"><img class="partner-icon" src="img/partners/safelaunch2.svg"></a><a class="col7" target="_blank" href="https://eywa.fi"><img class="partner-icon" src="img/partners/eywa2.svg"></a></div>
+            <div class="row"> <a class="col1 everscale" target="_blank" href="https://everscale.network"><img class="partner-icon" src="img/partners/everscale2.svg"></a><a class="col2 ackee" target="_blank" href="https://ackeeblockchain.com/"><img class="partner-icon" src="img/partners/ackee2.svg"></a><a class="col3 evmos" target="_blank" href="https://evmos.org/"><img class="partner-icon" src="img/partners/evmos.svg"></a><a class="col4" target="_blank" href="https://corestarter.com"><img class="partner-icon" src="img/partners/corestarter2.svg"></a><a class="col5 banxe" target="_blank" href="https://banxe.com/"><img class="partner-icon" src="img/partners/banxe.svg"></a><a class="col6 axelar" target="_blank" href="https://axelar.network/"><img class="partner-icon" src="img/partners/axelar2.svg"></a><a class="col7 sym" target="_blank" href="https://www.siu.edu.in/"><img class="partner-icon" src="img/partners/symbiosis.svg"></a></div>
+            <div class="row"> <a class="col1 kommunitas" target="_blank" href="https://kommunitas.net/"><img class="partner-icon" src="img/partners/kommunitas.svg"></a><a class="col2" target="_blank" href="https://occam.fi/"><img class="partner-icon" src="img/partners/occ.svg"></a><a class="col3" target="_blank" href="https://omniscia.io"><img class="partner-icon" src="img/partners/omniscia.svg"></a><a class="col4 bizunity" target="_blank" href="https://www.bizcommunity.com/"><img class="partner-icon" src="img/partners/bizunity.svg"></a><a class="col5 galxe" target="_blank" href="https://galxe.com/"><img class="partner-icon" src="img/partners/galxe.svg"></a><a class="col6 lifi" target="_blank" href="https://li.fi/brand-assets"><img class="partner-icon" src="img/partners/lifi.svg"></a><a class="col7 tdefi" target="_blank" href="https://tde.fi"><img class="partner-icon" src="img/partners/tdefi.svg"></a></div>
+            <div class="row"> <a class="col1" target="_blank" href="https://marketmaking.pro"><img class="partner-icon" src="img/partners/mmpro.svg"></a><a class="col2 moonbeam" target="_blank" href="https://moonbeam.network"><img class="partner-icon" src="img/partners/moonbeam.svg"></a><a class="col3" target="_blank" href="https://afford.capital/"><img class="partner-icon" src="img/partners/afford.svg"></a><a class="col4 sawa" target="_blank" href="https://sawastarter.com"><img class="partner-icon" src="img/partners/sawa.svg"></a><a class="col5 polygon" target="_blank" href="https://polygon.technology/"><img class="partner-icon" src="img/partners/polygon.svg"></a><a class="col6 stargate" target="_blank" href="https://stargate.finance"><img class="partner-icon" src="img/partners/stargate.png"></a><a class="col7 innmind" target="_blank" href="https://innmind.com"><img class="partner-icon" src="img/partners/innmind.svg"></a></div>
+            <div class="row"> <a class="col1 gotbit" target="_blank" href="https://gotbit.io/"><img class="partner-icon" src="img/partners/gotbit.svg"></a><a class="col2" target="_blank" href="https://debridge.finance/"><img class="partner-icon" src="img/partners/debridge2.svg"></a><a class="col3" target="_blank" href="https://www.avatel.es/"><img class="partner-icon" src="img/partners/avatea2.svg"></a><a class="col4 daofund" target="_blank" href=""><img class="partner-icon" src="img/partners/daofund.svg"></a><a class="col5" target="_blank" href="https://truepnl.com"><img class="partner-icon" src="img/partners/truepnl2.svg"></a><a class="col6" target="_blank" href="https://rarible.com/"><img class="partner-icon" src="img/partners/rarible.svg"></a></div>
+          </div>
+          <div class="partners__wrapper_tablet">
+            <div class="row"> <a class="col1" target="_blank" href="https://cointelegraph.com/"><img class="partner-icon" src="img/partners/cointelegraph.svg"></a><a class="col2 chainlink" target="_blank" href="https://chain.link/"><img class="partner-icon" src="img/partners/chainlink.svg"></a><a class="col3" target="_blank" href="https://1inch.io/"><img class="partner-icon" src="img/partners/1inch.svg"></a><a class="col4 thegraph" target="_blank" href="https://thegraph.com"><img class="partner-icon" src="img/partners/thegraph.svg"></a><a class="col5" target="_blank" href="https://near.org/"><img class="partner-icon" src="img/partners/near.svg"></a><a class="col6" target="_blank" href="https://de.fi"><img class="partner-icon" src="img/partners/defi.svg"></a><a class="col7 metis" target="_blank" href="https://www.metis.io"><img class="partner-icon" src="img/partners/metis.svg"></a></div>
+            <div class="row"> <a class="col1" target="_blank" href="https://magicsquare.io"><img class="partner-icon" src="img/partners/magicsquare.svg"></a><a class="col2" target="_blank" href="https://apeswap.finance/"><img class="partner-icon" src="img/partners/apeswap.svg"></a><a class="col3" target="_blank" href="https://odos.xyz/"><img class="partner-icon" src="img/partners/odos.svg"></a><a class="col4" target="_blank" href="https://algorand.com/"><img class="partner-icon" src="img/partners/algorand.svg"></a><a class="col5 boba" target="_blank" href="https://boba.network"><img class="partner-icon" src="img/partners/boba.svg"></a><a class="col6" target="_blank" href="https://www.cls.global"><img class="partner-icon" src="img/partners/cls.svg"></a><a class="col7" target="_blank" href="https://hacken.io"><img class="partner-icon" src="img/partners/hacken.svg"></a></div>
+            <div class="row"> <a class="col1" target="_blank" href="https://arbitrum.io"><img class="partner-icon" src="img/partners/arbitrum2.svg"></a><a class="col2" target="_blank" href="https://www.avax.network"><img class="partner-icon" src="img/partners/avalanche2.svg"></a><a class="col3" target="_blank" href="https://bitkeep.com/"><img class="partner-icon" src="img/partners/bitkeep2.svg"></a><a class="col4" target="_blank" href="https://aurora.dev"><img class="partner-icon" src="img/partners/aurora2.svg"></a><a class="col5" target="_blank" href="https://eywa.fi"><img class="partner-icon" src="img/partners/eywa2.svg"></a><a class="col6" target="_blank" href="https://banxe.com/"><img class="partner-icon" src="img/partners/banxe.svg"></a><a class="col7" target="_blank" href="https://www.certik.com/"><img class="partner-icon" src="img/partners/certik.svg"></a></div>
+            <div class="row"> <a class="col1 everscale" target="_blank" href="https://everscale.network"><img class="partner-icon" src="img/partners/everscale2.svg"></a><a class="col2" target="_blank" href="https://ackeeblockchain.com/"><img class="partner-icon" src="img/partners/ackee2.svg"></a><a class="col3" target="_blank" href="https://evmos.org/"><img class="partner-icon" src="img/partners/evmos.svg"></a><a class="col4" target="_blank" href="https://axelar.network/"><img class="partner-icon" src="img/partners/axelar2.svg"></a><a class="col5 tdefi" target="_blank" href="https://de.fi/"><img class="partner-icon" src="img/partners/tdefi.svg"></a><a class="col6" target="_blank" href="https://li.fi/brand-assets"><img class="partner-icon" src="img/partners/lifi.svg"></a><a class="col7" target="_blank" href="https://corestarter.com"><img class="partner-icon" src="img/partners/corestarter2.svg"></a></div>
+            <div class="row"> <a class="col1" target="_blank" href="https://kommunitas.net/"><img class="partner-icon" src="img/partners/kommunitas.svg"></a><a class="col2" target="_blank" href="https://occam.fi"><img class="partner-icon" src="img/partners/occ.svg"></a><a class="col3" target="_blank" href="https://omniscia.io"><img class="partner-icon" src="img/partners/omniscia.svg"></a><a class="col4" target="_blank" href="https://galxe.com/"><img class="partner-icon" src="img/partners/galxe.svg"></a><a class="col5" target="_blank" href="https://innmind.com"><img class="partner-icon" src="img/partners/innmind.svg"></a><a class="col6 safelaunch" target="_blank" href="https://safelaunch.io"><img class="partner-icon" src="img/partners/safelaunch2.svg"></a><a class="col7" target="_blank" href="https://sawastarter.com"><img class="partner-icon" src="img/partners/sawa.svg"></a></div>
+            <div class="row"> <a class="col1" target="_blank" href="https://marketmaking.pro"><img class="partner-icon" src="img/partners/mmpro.svg"></a><a class="col2" target="_blank" href="https://moonbeam.network"><img class="partner-icon" src="img/partners/moonbeam.svg"></a><a class="col3" target="_blank" href="https://afford.capital/"><img class="partner-icon" src="img/partners/afford.svg"></a><a class="col4" target="_blank" href="https://polygon.technology/"><img class="partner-icon" src="img/partners/polygon.svg"></a><a class="col5" target="_blank" href="https://stargate.finance"><img class="partner-icon" src="img/partners/stargate.png"></a><a class="col6 daofund" target="_blank" href=""><img class="partner-icon" src="img/partners/daofund.svg"></a><a class="col7" target="_blank" href="https://www.bizcommunity.com/"><img class="partner-icon" src="img/partners/bizunity.svg"></a></div>
+            <div class="row"> <a class="col1" target="_blank" href="https://gotbit.io/"><img class="partner-icon" src="img/partners/gotbit.svg"></a><a class="col2" target="_blank" href="https://debridge.finance/"><img class="partner-icon" src="img/partners/debridge2.svg"></a><a class="col3" target="_blank" href="https://www.avatel.es/"><img class="partner-icon" src="img/partners/avatea2.svg"></a><a class="col4" target="_blank" href="https://truepnl.com"><img class="partner-icon" src="img/partners/truepnl2.svg"></a><a class="col5 sym" target="_blank" href="https://symbiosis.finance"><img class="partner-icon" src="img/partners/symbiosis2.svg"></a><a class="col6" target="_blank" href="https://rarible.com/"><img class="partner-icon" src="img/partners/rarible.svg"></a></div>
+          </div>
+          <div class="partners__wrapper_mobile">
+            <div class="row"><a class="col1" target="_blank" href="https://cointelegraph.com/"><img class="partner-icon" src="img/partners/cointelegraph.svg"></a><a class="col2 chainlink" target="_blank" href="https://chain.link/"><img class="partner-icon" src="img/partners/chainlink.svg"></a><a class="col3" target="_blank" href="https://1inch.io/"><img class="partner-icon" src="img/partners/1inch.svg"></a></div>
+            <div class="row"><a class="col1" target="_blank" href="https://magicsquare.io"><img class="partner-icon" src="img/partners/magicsquare.svg"></a><a class="col2" target="_blank" href="https://apeswap.finance/"><img class="partner-icon" src="img/partners/apeswap.svg"></a><a class="col3" target="_blank" href="https://odos.xyz/"><img class="partner-icon" src="img/partners/odos.svg"></a></div>
+            <div class="row"><a class="col1" target="_blank" href="https://arbitrum.io"><img class="partner-icon" src="img/partners/arbitrum3.svg"></a><a class="col2 avalanche" target="_blank" href="https://www.avax.network"><img class="partner-icon" src="img/partners/avalanche3.svg"></a><a class="col3 bitkeep" target="_blank" href="https://bitkeep.com/"><img class="partner-icon" src="img/partners/bitkeep3.svg"></a></div>
+            <div class="row"> <a class="col1 everscale" target="_blank" href="https://everscale.network"><img class="partner-icon" src="img/partners/everscale3.svg"></a><a class="col2 ackee" target="_blank" href="https://ackeeblockchain.com/"><img class="partner-icon" src="img/partners/ackee3.png"></a><a class="col3 evmos" target="_blank" href="https://evmos.org/"><img class="partner-icon" src="img/partners/evmos.svg"></a></div>
+            <div class="row"> <a class="col1" target="_blank" href="https://kommunitas.net/"><img class="partner-icon" src="img/partners/kommunitas.svg"></a><a class="col2 occ" target="_blank" href="https://occam.fi"><img class="partner-icon" src="img/partners/occm3.svg"></a><a class="col3 omniscia" target="_blank" href="https://omniscia.io"><img class="partner-icon" src="img/partners/omniscia.svg"></a></div>
+            <div class="row"> <a class="col1" target="_blank" href="https://marketmaking.pro"><img class="partner-icon" src="img/partners/mmpro3.svg"></a><a class="col2" target="_blank" href="https://moonbeam.network"><img class="partner-icon" src="img/partners/moonbeam.svg"></a><a class="col3 afford" target="_blank" href="https://afford.capital/"><img class="partner-icon" src="img/partners/afford3.svg"></a></div>
+            <div class="row"> <a class="col1 gotbit" target="_blank" href="https://gotbit.io/"><img class="partner-icon" src="img/partners/gotbit.svg"></a><a class="col2 debridge" target="_blank" href="https://debridge.finance/"><img class="partner-icon" src="img/partners/debridge3.svg"></a><a class="col3 avatea" target="_blank" href="https://www.avatel.es/"><img class="partner-icon" src="img/partners/avatea3.svg"></a></div>
+            <div class="row"> <a class="col1 thegraph" target="_blank" href="https://thegraph.com"><img class="partner-icon" src="img/partners/thegraph.svg"></a><a class="col2 near" target="_blank" href="https://near.org/"><img class="partner-icon" src="img/partners/near.svg"></a><a class="col3 defi" target="_blank" href="https://de.fi"><img class="partner-icon" src="img/partners/defi.svg"></a></div>
+            <div class="row"> <a class="col1 algorand" target="_blank" href="https://algorand.com/"><img class="partner-icon" src="img/partners/algorand.svg"></a><a class="col2 boba" target="_blank" href="https://boba.network"><img class="partner-icon" src="img/partners/boba.svg"></a><a class="col3 cls" target="_blank" href="https://www.cls.global"><img class="partner-icon" src="img/partners/cls.svg"></a></div>
+            <div class="row"> <a class="col1 aurora" target="_blank" href="https://aurora.dev"><img class="partner-icon" src="img/partners/aurora2.svg"></a><a class="col2 eywa" target="_blank" href="https://eywa.fi"><img class="partner-icon" src="img/partners/eywa3.svg"></a><a class="col3 banxe" target="_blank" href="https://banxe.com/"><img class="partner-icon" src="img/partners/banxe.svg"></a></div>
+            <div class="row"> <a class="col1 axelar" target="_blank" href="https://axelar.network/"><img class="partner-icon" src="img/partners/axelar3.svg"></a><a class="col2 tdefi" target="_blank" href="https://tde.fi"><img class="partner-icon" src="img/partners/tdefi.svg"></a><a class="col3 lifi" target="_blank" href="https://li.fi/brand-assets"><img class="partner-icon" src="img/partners/lifi.svg"></a></div>
+            <div class="row"> <a class="col1 galxe" target="_blank" href="https://galxe.com/"><img class="partner-icon" src="img/partners/galxe.svg"></a><a class="col2 innmind" target="_blank" href="https://innmind.com"><img class="partner-icon" src="img/partners/innmind.svg"></a><a class="col3 safelaunch" target="_blank" href="https://safelaunch.io"><img class="partner-icon" src="img/partners/safelaunch3.svg"></a></div>
+            <div class="row"> <a class="col1 polygon" target="_blank" href="https://polygon.technology/"><img class="partner-icon" src="img/partners/polygon.svg"></a><a class="col2 stargate" target="_blank" href="https://stargate.finance"><img class="partner-icon" src="img/partners/stargate.png"></a><a class="col3 daofund" target="_blank" href=""><img class="partner-icon" src="img/partners/daofund.svg"></a></div>
+            <div class="row"> <a class="col1 truepnl" target="_blank" href="https://truepnl.com"><img class="partner-icon" src="img/partners/truepnl3.svg"></a><a class="col2 symbiosis" target="_blank" href="https://www.siu.edu.in/"><img class="partner-icon" src="img/partners/symbiosis3.svg"></a><a class="col3 metis" target="_blank" href="https://www.metis.io"><img class="partner-icon" src="img/partners/metis.svg"></a></div>
+            <div class="row"> <a class="col1" target="_blank" href="https://hacken.io"><img class="partner-icon" src="img/partners/hacken.svg"></a><a class="col2 bizunity" target="_blank" href="https://www.bizcommunity.com/"><img class="partner-icon" src="img/partners/bizunity.svg"></a><a class="col3 corestarter" target="_blank" href="https://corestarter.com"><img class="partner-icon" src="img/partners/corestarter3.svg"></a></div>
+            <div class="row"> <a class="col1" target="_blank" href="https://www.certik.com/"><img class="partner-icon" src="img/partners/certik.svg"></a><a class="col2" target="_blank" href="https://sawastarter.com"><img class="partner-icon" src="img/partners/sawa.svg"></a><a class="col3" target="_blank" href="https://rarible.com/"><img class="partner-icon" src="img/partners/rarible.svg"></a></div>
+          </div>
+        </section>
+        <div class="card-modals">
+          <!-- uno farm-->
+          <div class="card card-modal card-uno hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">UNO farm <a href="https://uno.farm/" target="_blank">/uno.farm</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>UnoFarm - это мощнейший агрегатор по сбору доходности (yield farming). Он автоматизирует процесс фарминга в вашу пользу. Фарминг доходности является одной из самых популярных инвестиционных стратегий в DeFi (децентрализованная финансовая система). Фарминг доходности позволяет пользователям DeFi получать дополнительную прибыль от займа/заимствования своих криптовалютных активов при предоставлении ликвидности децентрализованным биржам (DEX).</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Polygon, Everscale, Avalanche, Aurora</div>
+                      <div class="card__header-row"><span>Технологический стек:</span> Solidity, Web3.js, Vue.js, Node.js, The Graph</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/unofarm/491357_54de3c76e29c4fc78cb646bd094f5899_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/unofarm/image2.png" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/unofarm/491357_1147923b7f40446cac30a1ac944f127d_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/unofarm/491357_c51b60bd14cd4827800b91dcb5d17171_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/unofarm/image.png" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/unofarm/491357_e0029e7f298845ea8fbdc6b266d02bda_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/unofarm/491357_f1692f85e50e430f9511f52ec012c071_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/unofarm/491357_54de3c76e29c4fc78cb646bd094f5899_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/unofarm/image2.png" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/unofarm/491357_1147923b7f40446cac30a1ac944f127d_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/unofarm/491357_c51b60bd14cd4827800b91dcb5d17171_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/unofarm/image.png" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/unofarm/491357_e0029e7f298845ea8fbdc6b266d02bda_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/unofarm/491357_f1692f85e50e430f9511f52ec012c071_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                      <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                      <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- amnext-->
+          <div class="card card-modal card-amnext hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">Amnext </div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>Агрегатор лотерей DeFi с функцией свопа и прямым мостом к Binance - это инновационный сервис, который объединяет различные лотереи в экосистеме DeFi</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Binance Smart Chain</div>
+                      <div class="card__header-row"><span>Технологический стек:</span> Solidity, Web3.js, React, Node.js</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/amnext/491357_d5e1e128d1704a7e91d17bad11ad3fdf_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/amnext/491357_e0833a93f98440348fda8369b0efbea3_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/amnext/491357_9e3e1756d8d248558d04d5319b7d19c7_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/amnext/491357_d3dfda187baf441fad20f4b18492b11b_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/amnext/491357_ffb0b421ed6349a1b192ead056244e95_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/amnext/491357_e833771282d14301b6845f9f7bf42a62_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/amnext/491357_79d4c938dd07428081963fa4d6a36a4c_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/amnext/491357_322613cda4864126a25b3b8fb613351e_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/amnext/491357_d5e1e128d1704a7e91d17bad11ad3fdf_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/amnext/491357_e0833a93f98440348fda8369b0efbea3_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/amnext/491357_9e3e1756d8d248558d04d5319b7d19c7_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/amnext/491357_d3dfda187baf441fad20f4b18492b11b_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/amnext/491357_ffb0b421ed6349a1b192ead056244e95_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/amnext/491357_e833771282d14301b6845f9f7bf42a62_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/amnext/491357_79d4c938dd07428081963fa4d6a36a4c_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/amnext/491357_322613cda4864126a25b3b8fb613351e_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- voomo-->
+          <div class="card card-modal hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">Voomo </div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>Многоуровневая матричная система на основе смарт-контрактов - это инновационный подход, который позволяет автоматически перераспределять средства участников согласно заданному алгоритму. В этой системе рефереры получают вознаграждение не только за собственных рефералов, но и за рефералов своих рефералов, что способствует созданию множественных уровней вознаграждения.</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Ethereum</div>
+                      <div class="card__header-row"><span>Технологический стек:</span> Node.js, Web3.js, Solidity</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/voomo/491357_f56d85a60482451694490c317abe524d_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/voomo/491357_f56d85a60482451694490c317abe524d_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- starter-->
+          <div class="card card-modal hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">xStarter </div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>Проект DeFi, который включает в себя платформу для запуска новых проектов (launchpad), функции стейкинга и обмена.</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Ethereum, BSC, Polygon</div>
+                      <div class="card__header-row"><span>Технологический стек:</span> Solidity, Web3.js, Blockchain, React.js, Node.js</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/starter/491357_997a2d56b0c24becaa236b7df6f5f0d4_mv2.webp" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/starter/491357_997a2d56b0c24becaa236b7df6f5f0d4_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- social-->
+          <div class="card card-modal hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">SocialX  <a href="https://socialx.network/" target="_blank">socialx.network </a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>SocialX - это управляемая сообществом социальная платформа, позволяющая пользователям публиковать фото и видеоконтент. Она имеет много общего с социальными медиа-платформами, такими как Facebook и Instagram, но есть одно главное отличие: SocialX является децентрализованной блокчейн-платформой, где каждый может зарабатывать в виде токена SOCX.</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Совместимые с EVM сети</div>
+                      <div class="card__header-row"><span>Технологический стек:</span> Solidity, Web3.js, Blockchain, WordPress, React.js, Node.js, Python, React Native</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/social/491357_b8599aecc6174674ae0ef763c0c5766c_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/social/491357_b8599aecc6174674ae0ef763c0c5766c_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/social/491357_6a379d2770f747feb7e9de0fd0acd79e_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/social/491357_653fca5164ab4287bd601507129581ef_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/social/491357_aa36e87e7aa744afad17e9bd86c11f08_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/social/491357_c713fb5fc1ff4c8096aa0cf4f6fd5401_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/social/491357_608259f109f0486c99b0c508307048b1_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/social/491357_b8599aecc6174674ae0ef763c0c5766c_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/social/491357_b8599aecc6174674ae0ef763c0c5766c_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/social/491357_6a379d2770f747feb7e9de0fd0acd79e_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/social/491357_653fca5164ab4287bd601507129581ef_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/social/491357_aa36e87e7aa744afad17e9bd86c11f08_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/social/491357_c713fb5fc1ff4c8096aa0cf4f6fd5401_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/social/491357_608259f109f0486c99b0c508307048b1_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- swapcase-->
+          <div class="card card-modal card-swapcase hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">SwapCase <a href="https://swapcase.io/" target="_blank">swapcase.io</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>SwapCase - Некастодиальный кошелек, децентрализованная биржа ордеров, атомарный своп между разными блокчейнами в одном приложении с P2P-торговлей.</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Binance Smart Chain</div>
+                      <div class="card__header-row"><span>Технологический стек:</span> Solidity, Web3.js, Blockchain, React</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/swapcase/491357_e015ad562d9d47abb61af6296b80ff2a_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/swapcase/491357_bb3ab037e4e54ffc979749ea38ebbfcc_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/swapcase/491357_ffc8da38a1194d2792f173136b0bc24f_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/swapcase/491357_4161027ac5e34ebebe77131c198183bc_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/swapcase/491357_2a2806ccc1774fb58e1b5195f7e4054f_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/swapcase/491357_e015ad562d9d47abb61af6296b80ff2a_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/swapcase/491357_bb3ab037e4e54ffc979749ea38ebbfcc_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/swapcase/491357_ffc8da38a1194d2792f173136b0bc24f_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/swapcase/491357_4161027ac5e34ebebe77131c198183bc_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/swapcase/491357_2a2806ccc1774fb58e1b5195f7e4054f_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Spicy Network-->
+          <div class="card card-modal card-spicy hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">Spicy Network <a href="https://www.spicy.network/" target="_blank">spicy.network</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>Spicy Network - это инновационная и динамичная концепция DeFi, предлагающая всеобъемлющее решение для компаний, стремящихся запустить свои проекты, и инвесторов, ищущих все в одной платформе. Платформа SPICY предлагает современную интерпретацию NFT на рынке, а вся экосистема SPICY построена с учетом динамической структуры, обеспечивая долгосрочную устойчивость. Время лаунчпадов и IDO в мире криптовалюты ушло в прошлое, SPICY стремимся предоставить новые и инновационные возможности для их пользователей.</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Binance Smart Chain</div>
+                      <div class="card__header-row"><span>Технологический стек:</span>  Solidity, Web3.js, React.js, Node.js</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/spicynetwork/491357_5ed8bfc744b84e29a2c35f6f85ffa929_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/spicynetwork/491357_4953d142da9446efb489812aa6bae105_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/spicynetwork/491357_01cca47641e24a8e962948be6d8cd6fa_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/spicynetwork/491357_468750e14d1b48a09930139933f89e30_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/spicynetwork/491357_554dc8fe4f1642138ce447e8f54b8bce_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/spicynetwork/491357_22625a7e8fcd48f78c8e0d626dc18925_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/spicynetwork/491357_c3f7e30645334e05984f146ee154858f_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/spicynetwork/491357_b1e46c42de7048f9b67ce64b7496a866_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/spicynetwork/491357_d8fafd455db546cdb4c9c356fce145bd_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/spicynetwork/491357_e23267ae5ce746e8b62933587786e0b0_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/spicynetwork/491357_5ed8bfc744b84e29a2c35f6f85ffa929_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/spicynetwork/491357_4953d142da9446efb489812aa6bae105_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/spicynetwork/491357_01cca47641e24a8e962948be6d8cd6fa_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/spicynetwork/491357_468750e14d1b48a09930139933f89e30_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/spicynetwork/491357_554dc8fe4f1642138ce447e8f54b8bce_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/spicynetwork/491357_22625a7e8fcd48f78c8e0d626dc18925_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/spicynetwork/491357_c3f7e30645334e05984f146ee154858f_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/spicynetwork/491357_b1e46c42de7048f9b67ce64b7496a866_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/spicynetwork/491357_d8fafd455db546cdb4c9c356fce145bd_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/spicynetwork/491357_e23267ae5ce746e8b62933587786e0b0_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Diamond Hands-->
+          <div class="card card-modal hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">Diamond Hands <a href="https://diamondhands.ai/" target="_blank">diamondhands.ai</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>Токены ограниченного выпуска с динамической ценой которые можно обменять на физическое кольцо с бриллиантом. Реальные физические ювелирные изделия ограниченного выпуска с NFT в качестве подтверждения права собственности. В быстро меняющейся среде Биткойн выступил в качестве главного катализатора финансовой трансформации, которая стремится революционизировать все ранее установленные принципы. Имея в основе влияние Биткойна, известный ювелирный бренд DESIRED разработал коллекцию ограниченного выпуска под названием Diamond Hands, чтобы инновационно сочетать моду и криптовалюту как в использовании, так и в эстетике. Коллекция Diamond Hands символизирует новую эру. </p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Ethereum</div>
+                      <div class="card__header-row"><span>Технологический стек:</span>  React.js, Node.js, Solidity, Web3.js, Uniswap V3, Airtables</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/diamond/491357_6aeab4899f5240a5b8a8367f143731c8_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/diamond/491357_36ee26b7e090447fa343291aa123755b_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/diamond/491357_3b3f1decf4c2452aa2d988f3bdbc56e9_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/diamond/491357_78b142da73c342ecb7cb4c143c05ad26_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/diamond/491357_6aeab4899f5240a5b8a8367f143731c8_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/diamond/491357_36ee26b7e090447fa343291aa123755b_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/diamond/491357_3b3f1decf4c2452aa2d988f3bdbc56e9_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/diamond/491357_78b142da73c342ecb7cb4c143c05ad26_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Mandala Exchange-->
+          <div class="card card-modal hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">Mandala Exchange <a href="https://www.mandala.exchange/" target="_blank">mandala.exchange</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>Mandala стремится стать самой надежной биржей цифровых активов на рынке, позволяя пользователям с уверенностью  торговать криптовалютой на ведущей биржевой платформе с доступом к самому крупному пулу ликвидности в мире и с комиссиями от 0.065%</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> -</div>
+                      <div class="card__header-row"><span>Технологический стек:</span>  Web3.js, React.js, Node.js</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/mandala/491357_6f8cccc40e6a4b1da9f41ad252d285dc_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/mandala/491357_bc6b38158ca0463c973ec80a654b8486_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/mandala/491357_44a2ba0fa03c48d68a7e9a0b93019e21_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/mandala/491357_dd9baba8229d427db5a27ab0e6f9ecf9_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/mandala/491357_6f8cccc40e6a4b1da9f41ad252d285dc_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/mandala/491357_bc6b38158ca0463c973ec80a654b8486_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/mandala/491357_44a2ba0fa03c48d68a7e9a0b93019e21_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/mandala/491357_dd9baba8229d427db5a27ab0e6f9ecf9_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fair Gaming-->
+          <div class="card card-modal hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">Fair Gaming <a href="https://www.fairprotocol.solutions/" target="_blank">fairprotocol.solutions</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>FAIR - это децентрализованный игровой протокол P2P, предоставляющий уникальные игровые возможности для пользователей. С использованием протокола FAIR, игроки могут взаимодействовать напрямую друг с другом, обходя посредников и наслаждаясь полной автономией в игровом процессе</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Oasis, Emerald</div>
+                      <div class="card__header-row"><span>Технологический стек:</span>  Solidity, Web3.js, Vue.js, Node.js, The Graph</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/fair/2fde8a_a47a472b88674ca58aba244d5e10ba71_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/fair/2fde8a_c04689097894426da29d7b329d1d5889_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/fair/2fde8a_e4fb5877dda7410e8a625d57adc38746_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/fair/2fde8a_9f6b0a1fcbc94aa0af8e6870fcac0910_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/fair/2fde8a_7f87a4f1dbd14062a6a85bcea0e3992f_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/fair/2fde8a_f7728f15fd084d4c89bc007a4b8e96ec_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/fair/2fde8a_757e1050727e4f6dba7195ab9072e9b9_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/fair/2fde8a_f65a5db1e9ca436587a1c67fe5560ad4_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/fair/2fde8a_a47a472b88674ca58aba244d5e10ba71_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/fair/2fde8a_c04689097894426da29d7b329d1d5889_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/fair/2fde8a_e4fb5877dda7410e8a625d57adc38746_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/fair/2fde8a_9f6b0a1fcbc94aa0af8e6870fcac0910_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/fair/2fde8a_7f87a4f1dbd14062a6a85bcea0e3992f_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/fair/2fde8a_f7728f15fd084d4c89bc007a4b8e96ec_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/fair/2fde8a_757e1050727e4f6dba7195ab9072e9b9_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/fair/2fde8a_f65a5db1e9ca436587a1c67fe5560ad4_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Phyera-->
+          <div class="card card-modal hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">Phyera <a href="http://phyera.com/" target="_blank">Phyera.com</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>Универсальная система, объединяющая решения для майнинга, NFT и DAO</p>
+                      <ul> 
+                        <li>Используя технологию NFT, мы создаем сертификаты владения, которые представляют оборудование в цифровой форме.</li>
+                        <li>DAO (децентрализованная автономная организация) служит инновационным инструментом для управления и контроля активов.</li>
+                        <li>Мы также предлагаем решения для контроля хостинга, чтобы обеспечить надежное и эффективное использование оборудования.</li>
+                        <li>NFT-маркетплейс предоставляет возможность покупки и продажи оборудования, используя цифровые сертификаты владения.</li>
+                        <li>Вы можете легко продавать свое оборудование на современных NFT-маркетплейсах, получая доступ к широкой аудитории и новым возможностям для вашего бизнеса.</li>
+                      </ul>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Bitcoin, Ethereum, Polygon, BSC</div>
+                      <div class="card__header-row"><span>Технологический стек:</span>  Solidity, Web3.js, Vue.js, Node.js, The Graph</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/phyera/2fde8a_b0b9353c325f48ccb9540da5f9271cf0_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/phyera/2fde8a_fbdfb1f97d294c49955884aa23ed5f69_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/phyera/2fde8a_981c8d9f1df64d01b3e21ae271a4e283_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/phyera/2fde8a_f42225c09c2e4aec854f49e537ced993_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/phyera/2fde8a_a1e7cfa5b593422d9f874882cac63bcc_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/phyera/2fde8a_9cdbf3d41559407b841db97135728310_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/phyera/2fde8a_9361fe5586304282970199e9740460e1_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/phyera/2fde8a_ce3a355e55b249ba83068fa8f1137e75_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/phyera/2fde8a_b0b9353c325f48ccb9540da5f9271cf0_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/phyera/2fde8a_fbdfb1f97d294c49955884aa23ed5f69_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/phyera/2fde8a_981c8d9f1df64d01b3e21ae271a4e283_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/phyera/2fde8a_f42225c09c2e4aec854f49e537ced993_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/phyera/2fde8a_a1e7cfa5b593422d9f874882cac63bcc_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/phyera/2fde8a_9cdbf3d41559407b841db97135728310_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/phyera/2fde8a_9361fe5586304282970199e9740460e1_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/phyera/2fde8a_ce3a355e55b249ba83068fa8f1137e75_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BDNS-->
+          <div class="card card-modal card-bdns hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">BDNS <a href="https://uno.farm/" target="_blank">BDNS.app</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>BDNS - это первая в мире служба доменных имен, полностью основанная на Ethereum. Домены можно создавать в форме невзаимозаменяемых токенов (NFT), которые можно привязать к адресу кошелька Ethereum по имени. Таким образом, вы можете использовать простое имя вместо длинного адреса, например, ваш адрес кошелька Ethereum "Blockchain.eth" может быть представлен просто как "Blockchain" с помощью покупки и настройки NFT BDNS. Это предоставляет удобство и уникальность в использовании доменных имен на базе Ethereum.</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Ethereum</div>
+                      <div class="card__header-row"><span>Технологический стек:</span>  Solidity, Web3.js, Vue.js, Node.js, The Graph</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/bdns/2fde8a_55fdb863b87241de9a2de39f52129405_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/bdns/2fde8a_2e8d352349254e2ba2039a3d2789a5d9_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/bdns/2fde8a_473922cb38be437faf9fa365d52bf9fa_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/bdns/2fde8a_b5a05d7c9017472aa997908bb2008dc8_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/bdns/2fde8a_9e462c6bf53f451f8e15d60d7c5cc4c6_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/bdns/2fde8a_55fdb863b87241de9a2de39f52129405_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/bdns/2fde8a_2e8d352349254e2ba2039a3d2789a5d9_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/bdns/2fde8a_473922cb38be437faf9fa365d52bf9fa_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/bdns/2fde8a_b5a05d7c9017472aa997908bb2008dc8_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/bdns/2fde8a_9e462c6bf53f451f8e15d60d7c5cc4c6_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- darwin-->
+          <div class="card card-modal hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">Darwin <a href="https://darwin.co/" target="_blank">darwin.co</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>Платформа электронной коммерции, основанная на смарт-контрактах, которая доступна по платной подписке. Эта подписка предоставляет вам дополнительные привилегии и преимущества при использовании платформы. Создано инновационное решение, которое обеспечивает безопасность и прозрачность с использованием смарт-контрактов, чтобы вам было удобно и надежно вести свой бизнес в онлайн-среде.</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Ethereum</div>
+                      <div class="card__header-row"><span>Технологический стек:</span>  Web3.js, Solidity, Node.js</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/darwin/491357_abb94b6cb9f248579d7dbf265fb455a0_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/darwin/491357_161e2e5ab18546b1b3e38edb516eb700_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/darwin/491357_c1412e20661b4a13b134f1a12c94f85a_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/darwin/491357_e6152f8ef6c24f3f9fae5e467b90ec0f_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/darwin/491357_abb94b6cb9f248579d7dbf265fb455a0_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/darwin/491357_161e2e5ab18546b1b3e38edb516eb700_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/darwin/491357_c1412e20661b4a13b134f1a12c94f85a_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/darwin/491357_e6152f8ef6c24f3f9fae5e467b90ec0f_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 1 stop experiences-->
+          <div class="card card-modal hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">1 stop experiences <a href="https://www.chamonix-experiences.com/" target="_blank">chamonix-experiences.com</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>Супер-приложение для путешествий. Оно не только позволяет бронировать жилье, но также предоставляет возможность пользователям онлайн-бронирования и доставки в апартаменты ски-пассов и снаряжения. 1Stop также предоставляет удобную возможность бронирования трансфера из аэропорта с высококачественными и надежными службами по предоставлению трансфера. 1Stop предлагает пользователям возможность легкого бронирования все, начиная от гидов и инструкторов до спа-центров, еды и всего остального, чтобы сделать Ваши впечатления незабываемыми.</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> -</div>
+                      <div class="card__header-row"><span>Технологический стек:</span>  Python / Django, Vue.js, PostgreSQL</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/1stop/2fde8a_e7754d374d1944a6be61e2d6c482ed0f_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/1stop/2fde8a_b4503d4c95d146c891ebc2c2bec26939_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/1stop/2fde8a_a306c0310ffa406cbcfd460026194c97_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/1stop/2fde8a_063b0230fd1c406fbd010980c9633719_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/1stop/2fde8a_21dcf20ce01f42ba8eb4f2e997145b9c_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/1stop/2fde8a_386bb3dd4069422c97292d09e97f4266_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/1stop/2fde8a_8f9292a8fd0f497a985e4befaa316c01_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/1stop/2fde8a_21dcf20ce01f42ba8eb4f2e997145b9c_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/1stop/2fde8a_e7754d374d1944a6be61e2d6c482ed0f_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/1stop/2fde8a_b4503d4c95d146c891ebc2c2bec26939_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/1stop/2fde8a_a306c0310ffa406cbcfd460026194c97_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/1stop/2fde8a_063b0230fd1c406fbd010980c9633719_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/1stop/2fde8a_21dcf20ce01f42ba8eb4f2e997145b9c_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/1stop/2fde8a_386bb3dd4069422c97292d09e97f4266_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/1stop/2fde8a_8f9292a8fd0f497a985e4befaa316c01_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/1stop/2fde8a_21dcf20ce01f42ba8eb4f2e997145b9c_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Crisp-->
+          <div class="card card-modal hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">Crisp <span>Structured Liquidity Protocol</span> <a href="https://www.crisp.exchange/" target="_blank">crisp.exchange</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>Crisp - это протокол структурированной ликвидности, который объединяет три ключевых компонента: </p>
+                      <ul> 
+                        <li>Концентрированную ликвидность DEX</li>
+                        <li>Структурированные продукты</li>
+                        <li>Ликвидность с кредитным плечом</li>
+                      </ul>
+                      <p>Это объединение инструментов позволяет провайдерам ликвидности генерировать больше прибыли и защищать свои риски. Такой подход делает предоставление ликвидности более привлекательным для держателей капитала и способствует развитию всей индустрии DeFi, где NEAR является основной платформой.</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> NEAR</div>
+                      <div class="card__header-row"><span>Технологический стек:</span>  Rust, Vue.JS,NEAR SDK, NEAR CLI</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/crisp/2fde8a_0c5b3c86580b47398c1a6a84fc7627ea_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/crisp/2fde8a_ca63155c17474831bd216e5712d0567d_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/crisp/2fde8a_d0376d24b61248d78a30f6268efac275_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/crisp/2fde8a_b315a426c5b3498eabb6b3c0028f30df_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/crisp/2fde8a_5496727fa70d4782a0c929f220006081_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/crisp/2fde8a_0c5b3c86580b47398c1a6a84fc7627ea_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/crisp/2fde8a_ca63155c17474831bd216e5712d0567d_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/crisp/2fde8a_d0376d24b61248d78a30f6268efac275_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/crisp/2fde8a_b315a426c5b3498eabb6b3c0028f30df_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/crisp/2fde8a_5496727fa70d4782a0c929f220006081_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- dWill-->
+          <div class="card card-modal card-dwill hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">dWill <a href="https://dwill.app/" target="_blank">dWill.app</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>dWill - это инновационный протокол наследования, основанный на принципах децентрализации и безопасности хранения. С помощью dWill вы можете безопасно передавать токены из вашего криптовалютного кошелька на доверенные кошельки вашей семьи и друзей, или на ваш резервный кошелек. Этот процесс осуществляется автономно и полностью децентрализованно, обеспечивая надежность и безопасность ваших финансов.</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span> Разработка DeFi-сервисов</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Ethereum, BSC, Polygon, Avalanche, Arbitrum, Optimism</div>
+                      <div class="card__header-row"><span>Технологический стек:</span>  Solidity, Web3.js, Vue.js, Node.js, The Graph</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/dwill/2fde8a_2db21fc374354090afd7633d898a3978_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/dwill/image5.png" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/dwill/image4.png" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/dwill/2fde8a_1de277e98c3c4fbcb605d695e880321d_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/dwill/2fde8a_8e6c7bf5710a4839b313259689fe2348_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/dwill/2fde8a_2db21fc374354090afd7633d898a3978_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/dwill/image5.png" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/dwill/image4.png" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/dwill/2fde8a_1de277e98c3c4fbcb605d695e880321d_mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/dwill/2fde8a_8e6c7bf5710a4839b313259689fe2348_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- hey card-->
+          <div class="card card-modal hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">HeyCard <a href="https://t.me/HeyCard_bot" target="_blank">HeyCard</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>HeyCard - это инновационный необанк и криптовалютный кошелек, представленный в виде Telegram-бота. Он предлагает пользователям уникальную возможность создавать кастодиальные счета, пополнять их средствами в криптовалюте и получать банковскую карту Visa, которую можно использовать в любой точке мира.</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span>  Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Ethereum, Polygon</div>
+                      <div class="card__header-row"><span>Технологический стек:</span>  Vue.js, Python/Django, CryptoAPIs</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/heycard/2fde8a_5bb7f0ccd616485e996357cd65b1c2d3_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/heycard/2fde8a_5bb7f0ccd616485e996357cd65b1c2d3_mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- c5v-->
+          <div class="card card-modal hidden">
+            <div class="card-modal__wrapper"><span class="card__close"><img src="img/close.png" alt=""></span>
+              <div class="_container"> 
+                <div class="card__header"> 
+                  <div class="card__name">c5v <a href="https://c5v.org/" target="_blank">c5v.org</a></div>
+                  <div class="card__header-content"> 
+                    <div class="card__header-col"> 
+                      <p>C5v.org - это сервис, предоставляющий услуги по сертификации частных блокчейнов для лесов и поддержки устойчивого развития коренных народов. Source Pacifique была основана в 2015 году и является региональным стартапом с местным управлением и собственностью. Их технологический план, описанный на странице 10, является уникальным и целенаправленно стремится к переходу на новую платформу, соответствующую зрелости отрасли. Впервые разработка c5v.org началась в 2017 году.</p>
+                    </div>
+                    <div class="card__header-col">
+                      <div class="card__header-row"><span>Услуга:</span>  Разработка программного обеспечения</div>
+                      <div class="card__header-row"><span>Стадия проекта:</span> Релиз</div>
+                      <div class="card__header-row"><span>Блокчейн:</span> Частный блокчейн</div>
+                      <div class="card__header-row"><span>Технологический стек:</span>  Solidity, Web3.js, Blockchain, React.js, Частные узлы geth, Цепь с подтверждением авторитета, IPFS</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__content"> 
+                  <div class="card__swiper-container">
+                    <div class="swiper swiper-card mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/c5v/491357_d3ebc5e2c65249f1b02e1c2be0dd91d7~mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/c5v/491357_d3ebc5e2c65249f1b02e1123a2be0dd91d7~mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/c5v/491357_f535c81018cf4171bc3cd26e98b81166~mv2.webp" loading="lazy" alt=""></div>
+                        <div class="swiper-slide"><img id="fullscreen-preview-available" src="img/cases/content/c5v/491357_ab540ce6bfe0478aaea689c4b9af4e59~mv2.webp" loading="lazy" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper swiper-card-thumbs mySwiper" thumbsSlider="">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/cases/content/c5v/491357_d3ebc5e2c65249f1b02e1c2be0dd91d7~mv2.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/c5v/491357_d3ebc5e2c65249f1b02e1123a2be0dd91d7~mv2.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/c5v/491357_f535c81018cf4171bc3cd26e98b81166~mv2.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="img/cases/content/c5v/491357_ab540ce6bfe0478aaea689c4b9af4e59~mv2.webp" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"><img class="current" src="img/arrow-prev.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                    <div class="swiper-button-next"><img class="current" src="img/arrow-next.svg" alt=""><img class="disabled" src="img/arrow-disabled.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer _container">
+        <div class="footer__desctop">
+          <div class="footer__top"><a class="logo" href=""> <img src="img/logo.svg" alt="logo"></a>
+            <div class="nav footer__nav">
+              <div class="nav__links"><a href="index-ru.html">Главная</a><a href="#about-block">Услуги</a><a href="#advantages-block">Команды</a><a href="#cases-block">Кейсы</a><a href="#partners-block">Партнеры</a><a href="carrer-ru.html">Карьера</a></div>
+            </div>
+          </div>
+          <div class="footer__bottom"> <span class="footer__address">10 Anson road, #20-05, International plaza, Singapore, 079903</span>
+            <div class="footer__contacts"> 
+              <div class="footer__links"><a href="mailto:head@mycelium.team">head@mycelium.team</a><a href="tel:+66 095 320 3308">+66 095 320 3308</a></div>
+              <div class="footer__social social"> <a href="mailto:head@mycelium.team" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22.6375 26.0001C20.4101 27.479 17.7527 28.1716 15.0868 27.9681C12.421 27.7647 9.89942 26.6768 7.92226 24.877C5.9451 23.0773 4.6256 20.6688 4.17312 18.0338C3.72064 15.3988 4.1611 12.6881 5.42462 10.3319C6.68813 7.97567 8.70233 6.1089 11.1476 5.02778C13.5929 3.94666 16.3292 3.71311 18.9223 4.36419C21.5154 5.01527 23.8168 6.51369 25.4614 8.62169C27.1059 10.7297 27.9994 13.3265 28 16.0001C28 18.7626 27 21.0001 24.5 21.0001C22 21.0001 21 18.7626 21 16.0001V11.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="http://t.me/perminovma" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 16.8625L22.2375 26.75C22.3674 26.865 22.5249 26.9442 22.6947 26.9799C22.8644 27.0156 23.0405 27.0065 23.2057 26.9535C23.3708 26.9006 23.5194 26.8056 23.6367 26.6779C23.7541 26.5501 23.8362 26.3941 23.875 26.225L28.575 5.70004C28.6144 5.52327 28.6051 5.33913 28.548 5.16726C28.4909 4.99538 28.3883 4.84224 28.2509 4.72417C28.1136 4.6061 27.9468 4.52753 27.7683 4.49687C27.5898 4.4662 27.4064 4.48457 27.2375 4.55004L4.16251 13.6125C3.23751 13.975 3.36251 15.325 4.33751 15.525L11 16.8625Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 16.8627L28.0125 4.5752" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.6125 21.7998L12.7125 25.6998C12.5734 25.8411 12.3954 25.9378 12.2011 25.9777C12.0069 26.0176 11.8052 25.9988 11.6216 25.9238C11.4381 25.8488 11.281 25.7209 11.1703 25.5563C11.0596 25.3918 11.0003 25.1981 11 24.9998L11 16.8623" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://wa.me/79992027737" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.675 22.1251C4.18611 19.6131 3.66531 16.644 4.21039 13.7753C4.75546 10.9065 6.32891 8.33537 8.63535 6.5445C10.9418 4.75364 13.8226 3.86623 16.737 4.04888C19.6513 4.23152 22.3988 5.47165 24.4636 7.53646C26.5284 9.60127 27.7686 12.3488 27.9512 15.2631C28.1339 18.1775 27.2465 21.0583 25.4556 23.3647C23.6647 25.6712 21.0936 27.2446 18.2248 27.7897C15.3561 28.3348 12.387 27.814 9.875 26.3251V26.3251L5.725 27.5001C5.55497 27.5498 5.3747 27.5529 5.20307 27.509C5.03145 27.4651 4.87479 27.3758 4.74953 27.2506C4.62426 27.1253 4.535 26.9686 4.4911 26.797C4.4472 26.6254 4.45027 26.4451 4.5 26.2751L5.675 22.1251Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.0125 23C17.6967 23.0033 16.3932 22.7466 15.177 22.2446C13.9607 21.7426 12.8556 21.0052 11.9252 20.0748C10.9948 19.1444 10.2574 18.0393 9.75544 16.823C9.25343 15.6068 8.9967 14.3033 9 12.9875C9.00331 12.0614 9.37352 11.1744 10.0295 10.5207C10.6856 9.86705 11.5739 9.50002 12.5 9.50003V9.50003C12.6528 9.49881 12.8031 9.5388 12.9351 9.61579C13.0671 9.69278 13.1759 9.80392 13.25 9.93753L14.7125 12.4875C14.7995 12.6425 14.8441 12.8177 14.8419 12.9955C14.8397 13.1732 14.7908 13.3472 14.7 13.5L13.525 15.4625C14.1268 16.8014 15.1986 17.8732 16.5375 18.475L18.5 17.3C18.6528 17.2093 18.8268 17.1603 19.0046 17.1581C19.1823 17.1559 19.3575 17.2006 19.5125 17.2875L22.0625 18.75C22.1961 18.8242 22.3072 18.933 22.3842 19.0649C22.4612 19.1969 22.5012 19.3472 22.5 19.5C22.4967 20.4251 22.1286 21.3116 21.4757 21.9669C20.8227 22.6222 19.9376 22.9934 19.0125 23V23Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://go.oncehub.com/ceocbdo" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26 5L6 5C5.44772 5 5 5.44772 5 6L5 26C5 26.5523 5.44772 27 6 27L26 27C26.5523 27 27 26.5523 27 26L27 6C27 5.44772 26.5523 5 26 5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 3L22 7" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 3L10 7" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 11L27 11" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.5 16L14.6625 21.5L11.5 18.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__mobile">
+          <div class="footer__mobile-wrapper">
+            <div class="footer__col"><a class="logo" href=""> <img src="img/logo.svg" alt="logo"></a>
+              <div class="footer__social social"> <a href="mailto:head@mycelium.team" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22.6375 26.0001C20.4101 27.479 17.7527 28.1716 15.0868 27.9681C12.421 27.7647 9.89942 26.6768 7.92226 24.877C5.9451 23.0773 4.6256 20.6688 4.17312 18.0338C3.72064 15.3988 4.1611 12.6881 5.42462 10.3319C6.68813 7.97567 8.70233 6.1089 11.1476 5.02778C13.5929 3.94666 16.3292 3.71311 18.9223 4.36419C21.5154 5.01527 23.8168 6.51369 25.4614 8.62169C27.1059 10.7297 27.9994 13.3265 28 16.0001C28 18.7626 27 21.0001 24.5 21.0001C22 21.0001 21 18.7626 21 16.0001V11.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="http://t.me/perminovma" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 16.8625L22.2375 26.75C22.3674 26.865 22.5249 26.9442 22.6947 26.9799C22.8644 27.0156 23.0405 27.0065 23.2057 26.9535C23.3708 26.9006 23.5194 26.8056 23.6367 26.6779C23.7541 26.5501 23.8362 26.3941 23.875 26.225L28.575 5.70004C28.6144 5.52327 28.6051 5.33913 28.548 5.16726C28.4909 4.99538 28.3883 4.84224 28.2509 4.72417C28.1136 4.6061 27.9468 4.52753 27.7683 4.49687C27.5898 4.4662 27.4064 4.48457 27.2375 4.55004L4.16251 13.6125C3.23751 13.975 3.36251 15.325 4.33751 15.525L11 16.8625Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 16.8627L28.0125 4.5752" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.6125 21.7998L12.7125 25.6998C12.5734 25.8411 12.3954 25.9378 12.2011 25.9777C12.0069 26.0176 11.8052 25.9988 11.6216 25.9238C11.4381 25.8488 11.281 25.7209 11.1703 25.5563C11.0596 25.3918 11.0003 25.1981 11 24.9998L11 16.8623" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://wa.me/79992027737" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.675 22.1251C4.18611 19.6131 3.66531 16.644 4.21039 13.7753C4.75546 10.9065 6.32891 8.33537 8.63535 6.5445C10.9418 4.75364 13.8226 3.86623 16.737 4.04888C19.6513 4.23152 22.3988 5.47165 24.4636 7.53646C26.5284 9.60127 27.7686 12.3488 27.9512 15.2631C28.1339 18.1775 27.2465 21.0583 25.4556 23.3647C23.6647 25.6712 21.0936 27.2446 18.2248 27.7897C15.3561 28.3348 12.387 27.814 9.875 26.3251V26.3251L5.725 27.5001C5.55497 27.5498 5.3747 27.5529 5.20307 27.509C5.03145 27.4651 4.87479 27.3758 4.74953 27.2506C4.62426 27.1253 4.535 26.9686 4.4911 26.797C4.4472 26.6254 4.45027 26.4451 4.5 26.2751L5.675 22.1251Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.0125 23C17.6967 23.0033 16.3932 22.7466 15.177 22.2446C13.9607 21.7426 12.8556 21.0052 11.9252 20.0748C10.9948 19.1444 10.2574 18.0393 9.75544 16.823C9.25343 15.6068 8.9967 14.3033 9 12.9875C9.00331 12.0614 9.37352 11.1744 10.0295 10.5207C10.6856 9.86705 11.5739 9.50002 12.5 9.50003V9.50003C12.6528 9.49881 12.8031 9.5388 12.9351 9.61579C13.0671 9.69278 13.1759 9.80392 13.25 9.93753L14.7125 12.4875C14.7995 12.6425 14.8441 12.8177 14.8419 12.9955C14.8397 13.1732 14.7908 13.3472 14.7 13.5L13.525 15.4625C14.1268 16.8014 15.1986 17.8732 16.5375 18.475L18.5 17.3C18.6528 17.2093 18.8268 17.1603 19.0046 17.1581C19.1823 17.1559 19.3575 17.2006 19.5125 17.2875L22.0625 18.75C22.1961 18.8242 22.3072 18.933 22.3842 19.0649C22.4612 19.1969 22.5012 19.3472 22.5 19.5C22.4967 20.4251 22.1286 21.3116 21.4757 21.9669C20.8227 22.6222 19.9376 22.9934 19.0125 23V23Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://go.oncehub.com/ceocbdo" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26 5L6 5C5.44772 5 5 5.44772 5 6L5 26C5 26.5523 5.44772 27 6 27L26 27C26.5523 27 27 26.5523 27 26L27 6C27 5.44772 26.5523 5 26 5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 3L22 7" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 3L10 7" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 11L27 11" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.5 16L14.6625 21.5L11.5 18.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+              <div class="footer__links"><a href="mailto:head@mycelium.team">head@mycelium.team</a><a href="tel:+66 095 320 3308">+66 095 320 3308 </a></div>
+            </div>
+            <div class="nav__links nav__links--footer"><a href="index-ru.html">Главная</a><a href="#about-block">Услуги</a><a href="#advantages-block">Команда</a><a href="#cases-block">Кейсы</a><a href="#partners-block">Партнеры</a><a href="carrer-ru.html">Карьера</a></div>
+          </div><span class="footer__address">10 Anson road, #20-05, International plaza, Singapore, 079903</span>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/jquery.marquee.min.js"></script>
+    <script src="js/custom-select.js"></script>
+    <script src="js/jq-custom.js"></script>
+    <script src="js/autosize.js"></script>
+    <script src="js/phonebook.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/country-selector.js"></script>
+  </body>
+</html>

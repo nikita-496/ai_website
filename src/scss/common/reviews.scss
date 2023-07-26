@@ -1,0 +1,49 @@
+.reviews {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1226px;
+    width: 1267px;
+    background-image: url("../img/blur-reviews-min.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    right: 0;
+    top: -500px;
+    @media (max-width: 767px) {
+      height: 500px;
+      top: -240px;
+    }
+  }
+}
+
+.reviews__wrapper {
+  max-width: 890px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  @media (max-width: 767px) {
+    padding: 0 30px;
+  }
+}
+
+.swiper-reviews, .card__swiper-container, .swiper-cases {
+  .swiper-button-prev,
+  .swiper-button-next {
+    img.current {
+      display: block;
+    }
+    img.disabled {
+      display: none;
+    }
+  }
+  .swiper-button-disabled {
+    img.current {
+      display: none;
+    }
+    img.disabled {
+      display: block;
+    }
+  }
+}

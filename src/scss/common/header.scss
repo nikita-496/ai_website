@@ -1,0 +1,50 @@
+.header {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  margin-top: 62px;
+  margin-bottom: 250px;
+  @media (max-width: 767px) {
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+}
+
+.header__logo {
+  width: 251px;
+  @media (max-width: 767px) {
+    width: 198px;
+  }
+}
+
+.header__logo-menu {
+  display: none;
+  position: relative;
+  z-index: 100;
+  width: 35px;
+  @media (max-width: 767px) {
+    position: absolute;
+  }
+  &.active {
+    display: block;
+  }
+}
+
+
+
+.header__social {
+  svg {
+    &:hover {
+      path {
+        stroke: white;
+      }
+    }
+    @media (max-width: 767px) {
+      path {
+        stroke: var(--color-base);
+      }
+    }
+  }
+}

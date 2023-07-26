@@ -1,0 +1,7 @@
+.social {
+  display: flex;
+  gap: 15px;
+  @media (max-width: 767px) {
+    justify-content: flex-end;
+  }
+}

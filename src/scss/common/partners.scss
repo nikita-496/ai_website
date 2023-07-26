@@ -1,0 +1,633 @@
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.partners__wrapper_tablet {
+  display: none;
+  max-width: 740px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 18px;
+    width: 100%;
+  }
+  .chainlink {
+    img {
+      height: 70%;
+    }
+  }
+  .thegraph {
+    img {
+      margin-bottom: -4px;
+    }
+  }
+  .boba {
+    img {
+      height: 72%;
+      margin-left: 6px;
+      margin-bottom: 10px;
+    }
+  }
+  .everscale {
+    img {
+      margin-top: 8px;
+    }
+  }
+  .tdefi {
+    img {
+      max-height: 200%;
+      height: 200%;
+    }
+  }
+  .safelaunch {
+    img {
+      max-height: 160%;
+      height: 160%;
+    }
+  }
+  .daofund {
+    img {
+      height: 75%;
+    }
+  }
+  .sym {
+    img {
+      margin-left: 6px;
+    }
+  }
+  .col1 {
+    width: 98px !important;
+    margin-right: 24px;
+  }
+  .col2 {
+    width: 88px !important;
+    margin-right: 28px;
+  }
+  .col3 {
+    width: 72px !important;
+    margin-right: 32px;
+  }
+  .col4 {
+    width: 64px !important;
+    margin-right: 26px;
+  }
+  .col5 {
+    width: 72px !important;
+    margin-right: 32px;
+  }
+  .col6 {
+    width: 50px !important;
+    margin-right: 48px;
+  }
+  .col7 {
+    width: 34px !important;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: 32px;
+    z-index: 100;
+    img {
+      max-height: 100%;
+    }
+  }
+}
+
+.partners__wrapper_mobile {
+  display: none;
+  max-width: 88vw;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+  .chainlink {
+    img {
+      height: 75%;
+      margin-left: 6px;
+    }
+  }
+  .avalanche {
+    img {
+      height: 32%;
+      margin-left: 8px;
+    }
+  }
+  .bitkeep {
+    img {
+      height: 68%;
+      margin-left: 6px;
+    }
+  }
+  .everscale {
+    img {
+      margin-top: 9px;
+    }
+  }
+  .ackee {
+    img {
+      margin-left: 6px;
+      height: 40%;
+    }
+  }
+  .evmos {
+    img {
+      height: 60%;
+      margin-left: 4px;
+    }
+  }
+  .occ {
+    img {
+      height: 64%;
+      margin-left: 4px;
+    }
+  }
+  .omniscia {
+    img {
+      height: 58%;
+      margin-left: 6px;
+    }
+  }
+  .afford {
+    img {
+      max-height: 110%;
+      height: 110%;
+      margin-left: 2px;
+    }
+  }
+  .gotbit {
+    img {
+      height: 58%;
+    }
+  }
+  .debridge {
+    img {
+      height: 54%;
+    }
+  }
+  .avatea {
+    img {
+      margin-left: 4px;
+    }
+  }
+  .thegraph {
+    img {
+      max-height: 110%;
+      height: 110%;
+      margin-left: 2px;
+    }
+  }
+  .near {
+    img {
+      height: 64%;
+    }
+  }
+  .defi {
+    img {
+      height: 80%;
+      margin-left: 6px;
+    }
+  }
+  .algorand {
+    img {
+      height: 61%;
+    }
+  }
+  .boba {
+    img {
+      height: 60%;
+      margin-left: 4px;
+    }
+  }
+  .cls {
+    img {
+      height: 48%;
+      margin-left: 6px;
+    }
+  }
+  .aurora {
+    img {
+      height: 56%;
+    }
+  }
+  .eywa {
+    img {
+      height: 66%;
+      margin-left: 2px;
+    }
+  }
+  .banxe {
+    img {
+      margin-left: 6px;
+    }
+  }
+  .axelar {
+    img {
+      height: 60%;
+    }
+  }
+  .tdefi {
+    img {
+      max-height: 180%;
+      height: 180%;
+    }
+  }
+  .lifi {
+    img {
+      height: 70%;
+      margin-left: 6px;
+    }
+  }
+  .galxe {
+    img {
+      height: 40%;
+    }
+  }
+  .innmind {
+    img {
+      height: 68%;
+    }
+  }
+  .polygon {
+    img {
+      height: 52%;
+    }
+  }
+  .stargate {
+    img {
+      height: 56%;
+    }
+  }
+  .daofund {
+    img {
+      height: 68%;
+      margin-left: 6px;
+    }
+  }
+  .truepnl {
+    img {
+      height: 50%;
+    }
+  }
+  .metis {
+    img {
+      margin-left: 6px;
+    }
+  }
+  .bizunity {
+    img {
+      max-height: 120%;
+      height: 120%;
+    }
+  }
+  .corestarter {
+    img {
+      margin-left: 4px;
+    }
+  }
+  .col1 {
+    width: 98px;
+  }
+  .col2 {
+    margin-left: 18px;
+    margin-right: 18px;
+    width: 98px;
+  }
+  .col3 {
+    width: 98px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: 32px;
+    z-index: 100;
+    img {
+      max-height: 100%;
+    }
+  }
+}
+
+.partners__wrapper {
+  // display: grid;
+  // grid-template-columns: repeat(7, 1fr);
+  // grid-gap: 40px 30px;
+  max-width: 1180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  // padding-left: 26px;
+  // padding-right: 46px;
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 28px;
+  }
+  .row:nth-child(3) {
+    margin-bottom: 16px;
+  }
+  .cointelegraph {
+    img {
+      height: 75%;
+    }
+  }
+  .oneinch {
+    img {
+      height: 70%;
+    }
+  }
+  .chainlink {
+    img {
+      height: 55%;
+    }
+  }
+  .thegraph {
+    margin-left: -2px;
+    img {
+      margin-top: 20px;
+    }
+  }
+  .magicsquare {
+    margin-right: 14px !important;
+    img {
+      height: 70%;
+    }
+  }
+  .apeswap {
+    margin-right: 34px !important;
+    img {
+      margin-left: -4px;
+    }
+  }
+  .algorand {
+    margin-right: 18px !important;
+    img {
+      height: 50%;
+    }
+  }
+  .boba {
+    margin-right: 30px !important;
+    img {
+      height: 55%;
+      margin-bottom: 8px;
+    }
+  }
+  .cls {
+    img {
+      height: 35%;
+    }
+  }
+  .bitkeep {
+    img {
+      margin-left: 4px;  
+    }
+  }
+  .aurora {
+    margin-right: 16px !important;
+    img {
+      height: 40%;
+      margin-left: 4px;
+    }
+  }
+  .safelaunch {
+    height: 76px !important;
+    img {
+      max-height: none;
+      height: 92px;
+      margin-bottom: 8px;
+      margin-left: -2px;
+    }
+  }
+  .everscale {
+    img {
+      margin-top: 14px;
+    }
+  }
+  .ackee {
+    img {
+      height: 45%;
+    }
+  }
+  .evmos {
+    img {
+      height: 44%;
+      margin-left: 4px;
+    }
+  }
+  .banxe {
+    img {
+      height: 84%;
+    }
+  }
+  .axelar {
+    img {
+      height: 42%;
+      margin-left: 7px;
+    }
+  }
+  .sym {
+    img {
+      margin-left: -4px;
+      margin-bottom: 0px;
+    }
+  }
+  .kommunitas {
+    img {
+      height: 67%;
+    }
+  }
+  .bizunity {
+    img {
+      margin-left: 8px;
+    }
+  }
+  .galxe {
+    img {
+      height: 30%;
+    }
+  }
+  .lifi {
+    img {
+      height: 60%;
+      margin-left: 4px;
+    }
+  }
+  .tdefi {
+    img {
+      max-height: 150%;
+      height: 90px;
+    }
+  }
+  .moonbeam {
+    img {
+      height: 46%;
+    }
+  }
+  .sawa {
+    img {
+      height: 78%;
+      margin-left: 4px;
+    }
+  }
+  .polygon {
+    img {
+      height: 38%;
+    }
+  }
+  .stargate {
+    img {
+      height: auto;
+    }
+  }
+  .innmind {
+    img {
+      height: 58%;
+    }
+  }
+  .gotbit {
+    img {
+      height: 46%;
+    }
+  }
+  .daofund {
+    img {
+      height: 61%;
+      margin-left: 4px;
+    }
+  }
+  .col1 {
+    width: 195px !important;
+    margin-right: 20px;
+  }
+  .col2 {
+    width: 167px !important;
+    margin-right: 28px;
+  }
+  .col3 {
+    width: 130px !important;
+    margin-right: 56px;
+  }
+  .col4 {
+    width: 70px !important;
+    margin-right: 58px;
+    justify-content: center !important;
+  }
+  .col5 {
+    width: 130px !important;
+    margin-right: 10px;
+  }
+  .col6 {
+    width: 106px !important;
+    margin-right: 30px;
+  }
+  .col7 {
+    width: 98px !important;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 174px;
+    height: 62px;
+    z-index: 100;
+    // img {
+    //   // width: 100%;
+    //   @media (max-width: 767px) {
+    //     width: 70px;
+    //     // width: 50px;
+    //   }
+    // }
+    // img.active {
+    //   position: absolute;
+    //   opacity: 0;
+    // }
+    img {
+      opacity: 0.5;
+      max-height: 100%;
+    }
+
+    &:hover {
+      // img.active {
+      //   opacity: 1;
+      //   z-index: 100;
+      // }
+      img {
+        opacity: 1;
+      }
+      svg {
+        path {
+          fill: white;
+          stroke: white;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 86px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          #e40404 0%,
+          rgba(249, 114, 11, 0.24) 100%
+        );
+        background-size: contain;
+        filter: blur(40px);
+        z-index: 1;
+      }
+    }
+    // @media (max-width: 767px) {
+    //   // width: calc(100% / 3);
+    //   justify-content: center !important;
+    // }
+  }
+  // @media (max-width: 767px) {
+  //   gap: 20px 0;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  // }
+}
+
+@media screen and (max-width: 1240px) {
+  .partners__wrapper {
+    display: none;
+  }
+
+  .partners__wrapper_tablet {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .partners__wrapper_tablet {
+    display: none;
+  }
+
+  .partners__wrapper_mobile {
+    display: flex;
+  }
+
+  .partners {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

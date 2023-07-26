@@ -1,0 +1,59 @@
+.description {
+  position: relative;
+  & > ._container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    .section-head {
+      br {
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+  &::before {
+    content: "";
+    background-image: url(../img/blur-description-min.png);
+    width: 887px;
+    height: 904px;
+    position: absolute;
+    background-size: contain;
+    left: 0;
+    background-repeat: no-repeat;
+    top: -300px;
+    @media (max-width: 767px) {
+      height: 500px;
+      top: -200px;
+      left: -100px;
+    }
+  }
+}
+
+.description__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .btn-default {
+    align-self: center;
+    padding: 17px;
+  }
+}
+
+.description__text {
+  margin-bottom: 100px;
+  p {
+    color: white;
+    font-size: 18px;
+    // line-height: 1.25;
+    line-height: 1.31;
+    @media (max-width: 767px) {
+      font-size: 16px;
+      text-align: justify;
+    }
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 80px;
+  }
+}

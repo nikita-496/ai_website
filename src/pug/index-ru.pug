@@ -1,0 +1,26 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/preview
+        include modules/metrics
+        .wrapper
+            include modules/russian/header
+            .page
+                //- include carrer
+                include modules/russian/start-block
+                include modules/russian/services
+                include modules/marquee
+                include modules/russian/description 
+                include modules/russian/experience
+                include modules/russian/advantages
+                include modules/russian/steps
+                include modules/russian/cases
+                include modules/russian/reviews
+                include modules/russian/consultation
+                include modules/russian/partners
+                .card-modals
+                    include modules/russian/card
+
+            include modules/russian/footer
+        include modules/script

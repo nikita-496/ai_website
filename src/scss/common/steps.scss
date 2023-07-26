@@ -1,0 +1,74 @@
+.steps {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1300px;
+    width: 100%;
+    background-image: url("../img/blur-steps-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    top: -500px;
+    @media (max-width: 767px) {
+      height: 500px;
+      top: -100px;
+    }
+  }
+}
+
+.steps__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 990px;
+  margin: auto;
+  margin-bottom: 115px;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    grid-gap: 80px;
+  }
+}
+
+.steps__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  img {
+    height: 65px;
+    margin-bottom: 35px;
+    object-fit: contain;
+  }
+  h3 {
+    color: var(--color-orange);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+  }
+}
+
+.steps__footer {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+  img {
+    width: 32px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  a {
+    color: var(--color-blue);
+    text-decoration: underline;
+  }
+}

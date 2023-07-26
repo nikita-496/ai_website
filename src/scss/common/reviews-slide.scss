@@ -1,0 +1,131 @@
+.reviews-slide {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #2d293d;
+  border-radius: 4px;
+  height: fit-content;
+  // overflow: hidden;
+  // height: 100%;
+  & > * {
+    outline: 1px solid #2d293d;
+  }
+}
+
+.swiper-slide {
+  height: 100% !important;
+}
+
+.reviews-slide__pic {
+  position: relative;
+  padding: 25px 30px;
+  @media (max-width: 767px) {
+    outline: none;
+    width: 50%;
+    padding: 35px 25px;
+  }
+  &::before {
+    background: #f2633f;
+    filter: blur(35px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    content: "";
+    width: 22px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+
+.reviews-slide__descr {
+  padding: 30px 25px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    width: 50%;
+    gap: 5px;
+    outline: none;
+    padding: 35px 25px;
+    padding-left: 0;
+  }
+}
+
+.reviews-slide__text {
+  padding: 20px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  font-style: italic;
+  width: 100%;
+  flex: 1 0 auto;
+  height: 100%;
+  p {
+    line-height: 1.4;
+    margin: 0;
+    img {
+      display: inline;
+    }
+    span {
+      position: relative;
+      display: inline-flex;
+      // display: inline;
+      background: rgba(242, 99, 63, 0.4);
+      border-left: 1px solid #f2633f;
+      border-right: 1px solid #f2633f;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: -4px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--color-orange);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        right: -4px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--color-orange);
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 20px 25px;
+  }
+}
+
+.reviews-slide__name {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  span {
+    color: var(--color-blue);
+    font-weight: 300;
+    a {
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 767px) {
+    order: 1;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+}
