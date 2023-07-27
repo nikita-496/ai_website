@@ -164,6 +164,7 @@
     border-radius: 5px;
     overflow: hidden;
     height: 194px;
+    position: relative;
     img {
       height: 194px;
       object-fit: cover;
@@ -182,4 +183,35 @@
 
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
+}
+
+.fullsceen-limegpt {
+  width: 800px !important;
+  margin: 0 auto;
+  @media (max-width: 740px) {
+    display: none;
+  }
+}
+.gif-limegpt {
+  width: 600px !important;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 210px;
+  &-mobile {
+    display: none;
+    @media (max-width: 740px) {
+      display: block;
+    }
+  }
+  @media (max-width: 740px) {
+    display: none;
+  }
+}
+.fullsceen-music {
+  width: 800px !important;
+  margin: 0 auto;
+}
+.swiper-hiden {
+  display: none !important;
 }
