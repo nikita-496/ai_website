@@ -4,6 +4,9 @@
 
 .player-body {
   height: 600px;
+  @media (max-width: 500px) {
+    height: 200px;
+  }
 }
 
 #app-cover {
@@ -14,6 +17,9 @@
   width: 430px;
   height: 100px;
   margin: -4px auto;
+  @media (max-width: 500px) {
+    width: auto;
+  }
 }
 
 #bg-artwork {
@@ -29,6 +35,9 @@
   filter: blur(40px);
   -webkit-filter: blur(40px);
   z-index: 1;
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 #bg-layer {
@@ -40,15 +49,15 @@
   background-color: #fff;
   opacity: 0.51;
   z-index: 2;
+  @media (max-width: 500px) {
+    background-color: transparent;
+  }
 }
 
 #player {
   position: relative;
   height: 100%;
   z-index: 3;
-  @media (max-width: 500px) {
-    width: 300px;
-  }
 }
 
 #player-track {
@@ -63,6 +72,7 @@
   z-index: 1;
   @media (max-width: 500px) {
     padding: 10px;
+    top: -10px;
   }
 }
 
@@ -171,6 +181,10 @@
   box-shadow: 0 30px 80px #656565;
   border-radius: 15px;
   z-index: 2;
+  @media (max-width: 500px) {
+    box-shadow: none;
+    height: auto;
+  }
 }
 
 #album-art {
@@ -194,7 +208,8 @@
   top: -60px;
   box-shadow: 0 0 0 4px #fff7f7, 0 30px 50px -15px #afb7c1;
   @media (max-width: 500px) {
-    top: 10px;
+    top: 2px;
+    box-shadow: none;
   }
 }
 

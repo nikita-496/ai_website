@@ -14,6 +14,7 @@ $(function () {
     i = playPauseButton.find("i"),
     tProgress = $("#current-time"),
     tTime = $("#track-length"),
+    closeMusic = $("#close-music"),
     seekT,
     seekLoc,
     seekBarPos,
@@ -25,23 +26,23 @@ $(function () {
     durMinutes,
     durSeconds,
     playProgress,
-    bTime,
-    nTime = 0,
-    buffInterval = null,
-    tFlag = false,
-    albums = ["AI-Driven Music"],
-    trackNames = [
+    bTime;
+  (nTime = 0),
+    (buffInterval = null),
+    (tFlag = false),
+    (albums = ["AI-Driven Music"]),
+    (trackNames = [
       "AI - Song #1",
       "Alex Skrindo - Me & You",
       "Kaaze - Electro Boy",
       "Jordan Schor - Home",
       "Martin Garrix - Proxy",
-    ],
-    albumArtworks = ["_1", "_2", "_3", "_4", "_5"],
-    trackUrl = ["../img/item.mp3"],
-    playPreviousTrackButton = $("#play-previous"),
-    playNextTrackButton = $("#play-next"),
-    currIndex = -1;
+    ]),
+    (albumArtworks = ["_1", "_2", "_3", "_4", "_5"]),
+    (trackUrl = ["../img/item.mp3"]),
+    (playPreviousTrackButton = $("#play-previous")),
+    (playNextTrackButton = $("#play-next")),
+    (currIndex = -1);
 
   function playPause() {
     setTimeout(function () {
@@ -207,6 +208,8 @@ $(function () {
       else ++currIndex;
     }
   }
+
+  closeMusic.on("click", () => audio.pause());
 
   function initPlayer() {
     audio = new Audio();
