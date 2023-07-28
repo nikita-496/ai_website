@@ -888,8 +888,33 @@
           .swiper.swiper-card.mySwiper2
             .swiper-wrapper
               .swiper-slide
-                img#fullscreen-preview-available.fullsceen-music(src="img/cases/content/generateMusic/generationMusic-content-1.webp" loading="lazy" alt="")
-                <button id="btn-play" class="play-btn"></button>
+                .player-body
+                  #app-cover
+                    #bg-artwork
+                    #bg-layer
+                    #player
+                      #player-track
+                        #album-name
+                        #track-name
+                        #track-time
+                          #current-time
+                          #track-length
+                        #s-area
+                          #ins-time
+                          #s-hover
+                          #seek-bar
+                      #player-content
+                        #album-art
+                          img#_1.active(src='https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg')
+                          img#_2(src='https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_2.jpg')
+                          img#_3(src='https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_3.jpg')
+                          img#_4(src='https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_4.jpg')
+                          img#_5(src='https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_5.jpg')
+                          #buffer-box Buffering ...
+                        #player-controls
+                          .control
+                            #play-pause-button.player-button
+                              i.fas.fa-play
           .swiper-hiden.swiper-card-thumbs.mySwiper(thumbsSlider="")
             .swiper-wrapper
               .swiper-slide
